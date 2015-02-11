@@ -1,17 +1,17 @@
-# obscene.css
-obscene is a boilerplate stylesheet for mobile webapps especially for iOS
+# Obscene.css
+Obscene.css is a boilerplate stylesheet for mobile webapps especially for iOS
 
 
 ## Usage ##
-Obscene.css is under development right now.     
+Obscene.css is **under development** right now.     
 Check again later or [Watch](https://github.com/rofrischmann/Obscene.css/subscription) this repository to get instant news.     
 
 ## Benefit ##
-* Modern & flat Apps with native look (iOS)
-* Fully scalable and responsive
+* **Modern** & flat Apps with native look (iOS)
+* Fully scalable and **responsive**
 * Focus straightforward on development while Obscene.css does all your styling
-* Easy to customize (colors, ...)
-* Build to use with [Phonegap](http://phonegap.com/) ([More Information](#Coming-soon)
+* Easy to customize
+* Build to use with **[Phonegap](http://phonegap.com/)**
 
 ## Browser Support ##
 * Chrome

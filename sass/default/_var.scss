@@ -1,0 +1,13 @@
+/* DEFAULT COLOR */
+$default-color: rgb(152, 152, 152);
+
+
+/* DEFAULT BORDER */
+$default-border-color: rgba(177, 177, 177, 0.8);
+$default-border-style: solid;
+$default-border-width: 1px;
+$default-border: $default-border-width $default-border-style $default-border-color;
+
+
+/* Header */
+$header-background-color: rgba(255, 255, 255, 0.9);

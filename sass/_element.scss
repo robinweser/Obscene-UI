@@ -1,0 +1,12 @@
+header {
+    @extend .full-width;
+    @extend .top;
+    @extend .fixed;
+    
+    display: table;
+    text-align: center;
+    padding: 5px 12px;
+    background-color: $header-background-color;
+    border-bottom: $default-border;
+    color: $default-color;
+}

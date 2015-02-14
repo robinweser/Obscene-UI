@@ -47,7 +47,7 @@ builds obscene.css at `path/to/obscene/bin`.
 
 
 ## License
-Calculate.js is licensed under the MIT license. (http://opensource.org/licenses/MIT)
+Obscene.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
 ## Contributing
 If you've got something useful just create a pull request or let me know and I'll add it.   

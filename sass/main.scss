@@ -1,15 +1,28 @@
-@import 'default/_var';
-@import 'default/_mixins';
-@import 'element';
-@import 'position';
-@import 'misc';
-
-* {
-    margin: 0;
+@import 'var';
+@import 'stackorder';
+@import 'default/misc';
+@import 'default/mixins';
+@import 'default/ios';
+@import 'default/position';
+@import 'elements';
+*,
+*:before,
+*:after {
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
     -webkit-text-size-adjust: 100%;
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
+    font-family: $default-font;
+    font-size: $default-font-size;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+header,
+#ios-statusbar,
+nav,
+.tab,
+.tabs-top,
+.tabs-bottom {
+    box-sizing: border-box
 }

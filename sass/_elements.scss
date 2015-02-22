@@ -10,7 +10,15 @@ header {
     color: $default-color;
 }
 
-
+.button-group {
+    button {
+        border-width: 0px 0px 1px 0px !important;
+        margin: 0 !important
+    }
+    button:first-child {
+        border-width: 1px 0px 1px 0px !important
+    }
+}
 
 button {
     color: white;

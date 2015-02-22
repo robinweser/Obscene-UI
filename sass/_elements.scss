@@ -10,6 +10,25 @@ header {
     color: $default-color;
 }
 
+
+
+button {
+    color: white;
+    padding: 12px 7px;
+    margin: 4px 0px;
+    border-width: 1px 0px 1px 0px;
+    border-style: $default-border-style;
+    text-transform: uppercase;
+    background-color: rgba(103, 144, 180, 0.95);
+    border-color: rgba(52, 52, 52, 0.24);
+    &.submit {
+        background: rgba(99, 177, 159, 0.95)
+    }
+    &.warning {
+        background: rgba(211, 126, 126, 0.95)
+    }
+}
+
 nav {
     @extend .full-width;
     @extend .inline-block-margin-fix;

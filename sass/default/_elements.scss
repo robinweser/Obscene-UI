@@ -1,0 +1,49 @@
+@import 'dom/header';
+@import 'dom/input';
+@import 'dom/button';
+@import 'dom/p';
+@import 'dom/nav';
+
+
+
+.input-container {
+    @extend .full-width;
+    padding: 5px 8px;
+    background-color: $header-background-color;
+    border-bottom: $default-border;
+    input {
+        @extend .full-width;
+        &.text, &[type="text"] {
+            border: 1px solid #9b9b9b;
+            @include border-radius(10px);
+        }
+        &.search,
+        &[type="search"] {
+            @include border-radius(50px);
+            border: 1px solid #9b9b9b;
+        }
+    }
+}
+
+.button-group {
+    button {
+        margin: 0 !important;
+        &.full-width {
+            border-width: 0px 0px 1px 0px !important;
+        }
+    }
+    button:first-child {
+        &.full-width {
+            border-width: 1px 0px 1px 0px !important
+        }
+    }
+    &.full-width {
+        button {
+            @extend .full-width;
+            border-width: 0px 0px 1px 0px !important;
+        }
+        button:first-child {
+            border-width: 1px 0px 1px 0px !important
+        }
+    }
+}

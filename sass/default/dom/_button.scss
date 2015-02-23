@@ -1,0 +1,21 @@
+button {
+    color: white;
+    padding: 12px 10px;
+    margin: 4px 0px;
+    border-width: $default-border-width;
+    border-style: $default-border-style;
+    text-transform: uppercase;
+    background-color: rgba(103, 144, 180, 0.95);
+    border-color: rgba(52, 52, 52, 0.24);
+    @include border-radius(10px);
+    &.submit {
+        background: rgba(99, 177, 159, 0.95)
+    }
+    &.warning {
+        background: rgba(211, 126, 126, 0.95)
+    }
+    &.full-width {
+        @include border-radius(0);
+        border-width: 1px 0px 1px 0px;
+    }
+}

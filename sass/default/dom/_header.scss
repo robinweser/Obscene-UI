@@ -1,0 +1,11 @@
+header {
+    @extend .full-width;
+    display: table;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 5px;
+    font-size: $header-font-size;
+    background-color: $header-background-color;
+    border-bottom: $default-border;
+    color: $default-color;
+}

@@ -1,0 +1,111 @@
+.full-width {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.width-90 {
+    width: 90%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.width-66 {
+    width: 66.6666667%;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.width-33 {
+    width: 33.333334%;
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-25 {
+    width: 25%;
+}
+
+.width-20 {
+    width: 20%;
+}
+
+.width-10 {
+    width: 10%;
+}
+
+.width-5 {
+    width: 5%;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.center {
+    text-align: center;
+    div, span {
+        margin: 0 auto;
+    }
+}
+
+.vbox,
+.hbox {
+    @extend .inline-block-margin-fix;
+}
+
+.vbox {
+    div, span {
+        clear: right;
+    }
+}
+
+.hbox {
+    div, span {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+.fit {
+    width: 100%;
+    height: 100%;
+}

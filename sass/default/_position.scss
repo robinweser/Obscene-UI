@@ -17,3 +17,10 @@
 .fixed {
     position: fixed;
 }
+
+.center {
+    text-align: center;
+    div, span {
+        margin: 0 auto;
+    }
+}

@@ -11,18 +11,23 @@
     @-webkit-keyframes $animation-name {
         @content;
     }
+
     @-khtml-keyframes $animation-name {
         @content;
     }
+
     @-moz-keyframes $animation-name {
         @content;
     }
+
     @-ms-keyframes $animation-name {
         @content;
     }
+
     @-o-keyframes $animation-name {
         @content;
     }
+
     @keyframes $animation-name {
         @content;
     }
@@ -39,7 +44,7 @@
 @mixin opacity($opacity) {
     opacity: $opacity;
     $opacity-ie: $opacity * 100;
-    filter: alpha(opacity=$opacity-ie);
+    filter: alpha(opacity = $opacity-ie);
 }
 
 %invisible {
@@ -51,4 +56,12 @@
     clip: rect(0 0 0 0);
     clip: rect(0, 0, 0, 0);
     position: absolute;
+}
+
+@function shade($color, $percent) {
+    @return mix(black, $color, $percent);
+}
+
+@function tint($color, $percent) {
+    @return mix(white, $color, $percent);
 }

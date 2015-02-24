@@ -1,21 +1,45 @@
 button {
-    color: white;
-    padding: 12px 10px;
-    margin: 4px 0px;
-    border-width: $default-border-width;
-    border-style: $default-border-style;
-    text-transform: uppercase;
-    background-color: rgba(103, 144, 180, 0.95);
-    border-color: rgba(52, 52, 52, 0.24);
-    @include border-radius(10px);
-    &.submit {
-        background: rgba(99, 177, 159, 0.95)
+    color: $button-color;
+    padding: 12px;
+    margin: 4px;
+    border: $default-border-width $default-border-style $button-border-color;
+    background-color: $button-background-color;
+    @include border-radius($button-border-radius);
+    &.link {
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+        padding: 0 4px;
+        color: $button-background-color;
     }
-    &.warning {
-        background: rgba(211, 126, 126, 0.95)
+    &.small {
+        font-size: $button-small-font-size;
+        padding: 8px;
     }
-    &.full-width {
-        @include border-radius(0);
-        border-width: 1px 0px 1px 0px;
+    &.confirm {
+        background-color: $button-confirm-background-color;
+    }
+    &.decline {
+        background-color: $button-decline-background-color;
+    }
+    &.full-width,
+    &.squared {
+        @include border-radius($button-squared-border-radius);
+    }
+    &.rounded {
+        @include border-radius($button-rounded-border-radius);
+    }
+    &.inverted {
+        background-color: transparent;
+        border-color: $button-background-color;
+        color: $button-background-color;
+        &.confirm {
+            border-color: $button-confirm-background-color;
+            color: $button-confirm-background-color;
+        }
+        &.decline {
+            border-color: $button-decline-background-color;
+            color: $button-decline-background-color;
+        }
     }
 }

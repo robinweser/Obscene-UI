@@ -1,35 +1,30 @@
 nav {
     @extend .full-width;
-    @extend .inline-block-margin-fix;
+    @extend .hbox;
     &.tabs-top {
-        z-index: $stack-nav-bottom;
         border-bottom: $default-border;
         background-color: $nav-background-color;
         .tab {
-            cursor: pointer;
             padding: 12px 0;
             text-align: center;
             overflow: hidden;
-            display: inline-block;
-            opacity: 0.5;
-            background: rgba(204, 204, 204, 0.84);
+            @include opacity(0.5);
+            background: $nav-tab-top-background-color;
             &.active {
-                background: rgba(204, 204, 204, 0.0);
-                opacity: 1.0;
+                background: $nav-tab-top-active-background-color;
+                @include opacity(1);
             }
         }
     }
     &.tabs-bottom {
         @extend .bottom;
-        position: fixed;
+        @extend .fixed;
         z-index: $stack-nav-bottom;
         border-top: $default-border;
         background-color: $nav-background-color;
         .tab {
             height: $nav-bottom-height;
-            display: inline-block;
             padding: 5px 0px 0px;
-            cursor: pointer;
             overflow: hidden;
             color: $nav-tab-color;
             text-align: center;
@@ -39,7 +34,7 @@ nav {
                 font-size: $nav-tab-font-size;
             }
             img {
-                opacity: 0.4;
+                @include opacity(0.4);
                 height: 33px;
                 width: auto;
                 margin-top: -2px;
@@ -48,7 +43,7 @@ nav {
                 color: $nav-tab-active-color;
             }
             &.active img {
-                opacity: 1
+                @include opacity(1);
             }
         }
     }

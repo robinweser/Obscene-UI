@@ -1,9 +1,8 @@
-
 /* DEFAULT */
 $default-color: rgb(102, 102, 102);
-$default-font: 'Open Sans', 'Lato', sans-serif;
+$default-font: "Open Sans", "Lato", sans-serif;
 $default-font-size: 14px;
-
+$default-text-padding: 10px;
 
 /* DEFAULT BORDER */
 $default-border-color: rgba(177, 177, 177, 0.8);
@@ -11,30 +10,39 @@ $default-border-style: solid;
 $default-border-width: 1px;
 $default-border: $default-border-width $default-border-style $default-border-color;
 
+$button-background-color: rgba(103, 144, 180, 0.95);
+$button-confirm-background-color: rgba(99, 177, 159, 0.95);
+$button-decline-background-color: rgba(211, 126, 126, 0.95);
+$button-border-color: rgba(52, 52, 52, 0.25);
+$button-color: white;
+$button-border-radius: 8px;
+$button-rounded-border-radius: 50px;
+$button-squared-border-radius: 0;
+$button-small-font-size: 10px;
 
 /* Header */
 $header-background-color: rgba(255, 255, 255, 0.85);
 $header-font-size: 15px;
 
 $nav-background-color: rgba(255, 255, 255, 0.95);
-$nav-bottom-height : 52px;
+$nav-bottom-height: 52px;
 $nav-tab-color: rgba(150, 150, 150, 1);
+$nav-tab-top-background-color: rgba(204, 204, 204, 0.85);
+$nav-tab-top-active-background-color: rgba(204, 204, 204, 0);
 $nav-tab-font-size: 9px;
 $nav-tab-active-color: rgb(26, 26, 26);
 
+@import "default/stackorder";
+@import "default/misc";
+@import "default/mixins";
+@import "default/ios";
+@import "default/layout";
+@import "default/elements";
 
-
-
-
-
-
-
-@import 'default/stackorder';
-@import 'default/misc';
-@import 'default/mixins';
-@import 'default/ios';
-@import 'default/layout';
-@import 'default/elements';
+html, body {
+    width: 100%;
+    height: 100%;
+}
 
 *,
 *:before,
@@ -57,5 +65,5 @@ nav,
 .tabs-bottom,
 input,
 div {
-    box-sizing: border-box
+    box-sizing: border-box;
 }

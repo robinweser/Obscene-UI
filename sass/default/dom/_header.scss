@@ -3,9 +3,30 @@ header {
     display: table;
     text-align: center;
     text-transform: uppercase;
-    padding: 12px 5px;
+    padding: 12px 6px;
     font-size: $header-font-size;
     background-color: $header-background-color;
     border-bottom: $default-border;
     color: $default-color;
+    vertical-align: 2px;
+    &.ios-statusbar {
+        margin-top: 21px;
+    }
+    .header-buttons-left {
+        @extend .left;
+        margin-left: 3px;
+    }
+    .header-buttons-right {
+        @extend .right;
+        margin-right: 3px;
+    }
+    .header-buttons-left,
+    .header-buttons-right {
+        position: absolute;
+        button {
+            @extend button.link;
+            font-size: $header-font-size;
+            margin: 0 3px;
+        }
+    }
 }

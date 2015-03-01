@@ -25,12 +25,15 @@ $header-background-color: rgba(255, 255, 255, 0.85);
 $header-font-size: 15px;
 
 $nav-background-color: rgba(255, 255, 255, 0.95);
-$nav-bottom-height: 52px;
 $nav-tab-color: rgba(150, 150, 150, 1);
+$nav-tab-border-color: rgba(177, 177, 177, 0.5);
 $nav-tab-top-background-color: rgba(204, 204, 204, 0.85);
 $nav-tab-top-active-background-color: rgba(204, 204, 204, 0);
 $nav-tab-font-size: 9px;
 $nav-tab-active-color: rgb(26, 26, 26);
+$nav-notification-font-size: 9px;
+$nav-notification-border-color: rgb(51, 75, 139);
+$nav-notification-background-color: rgb(44, 67, 128);
 
 @import "default/stackorder";
 @import "default/misc";

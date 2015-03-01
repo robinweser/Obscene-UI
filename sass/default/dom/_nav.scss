@@ -47,4 +47,12 @@ nav {
             }
         }
     }
+    &.bordered {
+        .tab {
+            border-right: $default-border-width $default-border-style $nav-tab-border-color;
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
 }

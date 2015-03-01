@@ -1,0 +1,41 @@
+ul,
+ol,
+dl {
+    margin: 0;
+    padding: 0;
+    background: $header-background-color;
+    &.bordered {
+        li, dd {
+            border-bottom: $default-border;
+        }
+    }
+    li,
+    dt,
+    dd {
+        padding: 12px 10px;
+        &.selected {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
+ul {
+    li {
+        @extend .full-width;
+        list-style-type: none;
+    }
+}
+
+ol {
+    padding-left: 28px;
+}
+
+dl {
+    dt {
+        padding-bottom: 0px;
+    }
+    dd {
+        padding-left: 30px;
+        padding-top: 0px;
+    }
+}

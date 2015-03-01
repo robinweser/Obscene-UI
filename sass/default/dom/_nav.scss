@@ -47,6 +47,41 @@ nav {
             }
         }
     }
+    &.tabs-grouped {
+        border-bottom: $default-border;
+        background-color: $nav-background-color;
+        @extend .center;
+        padding: 7px 0;
+        .tab {
+            font-size: 13px;
+            padding: 6px 8px;
+            text-align: center;
+            overflow: hidden;
+            background-color: transparent;
+            border: $default-border;
+            border-width: 1px 0px 1px 0px;
+            &.active {
+                background-color: $default-border-color;
+                color: white;
+            }
+            &:first-child {
+                @include border-radius(5px 0px 0px 5px);
+                border-left: $default-border;
+            }
+            &:last-child {
+                @include border-radius(0px 5px 5px 0px);
+                border-right: $default-border;
+            }
+        }
+        &.bordered {
+            .tab {
+                border-right: $default-border;
+                &:last-child {
+                    border-right: $default-border;
+                }
+            }
+        }
+    }
     &.bordered {
         .tab {
             border-right: $default-border-width $default-border-style $nav-tab-border-color;

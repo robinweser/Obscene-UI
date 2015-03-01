@@ -23,8 +23,7 @@ nav {
         border-top: $default-border;
         background-color: $nav-background-color;
         .tab {
-            height: $nav-bottom-height;
-            padding: 5px 0px 0px;
+            padding: 3px 0 2px;
             overflow: hidden;
             color: $nav-tab-color;
             text-align: center;
@@ -51,7 +50,7 @@ nav {
             }
             .tab-name {
                 display: block;
-                margin-top: -4px;
+                margin-top: -5px;
                 font-size: $nav-tab-font-size;
             }
             img {
@@ -65,6 +64,11 @@ nav {
             }
             &.active img {
                 @include opacity(1);
+            }
+        }
+        &.icon-only {
+            .tab {
+                padding: 6px 0 2px;
             }
         }
     }

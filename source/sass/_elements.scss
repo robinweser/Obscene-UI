@@ -1,13 +1,12 @@
-@import 'dom/header';
-@import 'dom/input';
-@import 'dom/button';
-@import 'dom/p';
-@import 'dom/nav';
-@import 'dom/body';
-@import 'dom/hr';
-@import 'dom/list';
-
-
+@import 'default/header';
+@import 'default/input';
+@import 'default/button';
+@import 'default/p';
+@import 'default/nav';
+@import 'default/body';
+@import 'default/hr';
+@import 'default/list';
+@import 'default/scrollbar';
 .input-container {
     @extend .full-width;
     padding: 5px 8px;

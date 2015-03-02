@@ -1,3 +1,5 @@
+@import "lib/normalize";
+
 /* DEFAULT */
 $default-color: rgb(102, 102, 102);
 $default-font: "Open Sans", "Lato", sans-serif;
@@ -35,12 +37,12 @@ $nav-notification-font-size: 9px;
 $nav-notification-border-color: rgb(51, 75, 139);
 $nav-notification-background-color: rgb(44, 67, 128);
 
-@import "default/stackorder";
-@import "default/misc";
-@import "default/mixins";
-@import "default/ios";
-@import "default/layout";
-@import "default/elements";
+@import "sass/stackorder";
+@import "sass/misc";
+@import "sass/mixins";
+@import "sass/ios";
+@import "sass/layout";
+@import "sass/elements";
 
 html, body {
     width: 100%;
@@ -65,8 +67,8 @@ header,
 nav,
 .tab,
 .tabs-top,
-.tabs-bottom,
-input,
-div, ol, ul, li, hr, p, button {
+.tabs-bottom, button, input[type="search"],
+input,.group, .group-name,
+div, ol, ul, dl, li, hr, p, button {
     box-sizing: border-box;
 }

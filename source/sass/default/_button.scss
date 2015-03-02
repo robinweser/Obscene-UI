@@ -22,6 +22,10 @@ button {
     &.decline {
         background-color: $button-decline-background-color;
     }
+    &.full-width {
+        margin: 0;
+        border-width: 1px 0px 1px 0px;
+    }
     &.full-width,
     &.squared {
         @include border-radius($button-squared-border-radius);
@@ -40,6 +44,13 @@ button {
         &.decline {
             border-color: $button-decline-background-color;
             color: $button-decline-background-color;
+        }
+        &.thick-border {
+            border-width: 2px;
+        }
+        &.white {
+            border-color: white;
+            color: white;
         }
     }
 }

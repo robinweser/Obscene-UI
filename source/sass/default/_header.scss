@@ -9,9 +9,6 @@ header {
     border-bottom: $default-border;
     color: $default-color;
     vertical-align: 2px;
-    &.ios-statusbar {
-        padding-top: 33px;
-    }
     .header-buttons-left {
         @extend .left;
         margin-left: 3px;

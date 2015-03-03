@@ -1,4 +1,7 @@
 body {
     overflow-x: hidden;
     overflow-y: auto;
+    &.ios-statusbar {
+        margin-top: 21px;
+    }
 }

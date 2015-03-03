@@ -80,8 +80,15 @@ input {
             @extend .slider-track;
         }
     }
+    &[type="radio"],
+    &[type="checkbox"] {
+        vertical-align: -1px;
+        margin-right: 5px;
+    }
     &[type="checkbox"] {
         &.switch {
+            vertical-align: baseline;
+            margin-right: 0;
             max-height: 0;
             max-width: 0;
             opacity: 0;

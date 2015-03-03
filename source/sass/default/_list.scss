@@ -36,6 +36,21 @@ ul {
         @extend .full-width;
         list-style-type: none;
     }
+    &.floating {
+        @extend .vbox;
+        li {
+            display: inline-block;
+            vertical-align: top;
+        }
+        &.bordered {
+            li {
+                border-right: $default-border;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
 }
 
 ol {

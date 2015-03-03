@@ -10,10 +10,11 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400,300' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body class="ios-statusbar">
+
     <div id="ios-statusbar">&nbsp;••••• netzclub 3G <span style="float:right">97% ----&nbsp;</span>
     </div>
-    <header class="ios-statusbar"><span class="header-buttons-left"><button>< Back</button></span>Hallo<span class="header-buttons-right"><button>+</button></span>
+    <header><span class="header-buttons-left"><button>< Back</button></span>Hallo<span class="header-buttons-right"><button>+</button></span>
     </header>
     <nav class="tabs-top">
         <div class="tab width-33">
@@ -37,11 +38,39 @@
             Tab 3
         </div>
     </nav>
+    <input type="submit">
+    <input type="submit" class="full-width">
+    <button class="full-width">Hallo</button>
+    <input type="range" class="full-width">
+    <br>
+    <input type="range" class="full-width">
+    <input type="range" class="full-width">
+    <br>
+    <div class="switch">
+        <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+        <label for="cmn-toggle-1"></label>
+    </div>
+    <br>
+    <div class="switch">
+        <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round" type="checkbox">
+        <label for="cmn-toggle-2"></label>
+    </div>
+    <input type="text" placeholder="Name">
+    <input type="password" placeholder="Name">
+    <input type="email" placeholder="Name">
+    <input type="search" placeholder="Name">
+    <input type="text" placeholder="Name" class="full-width">
+    <input type="password" placeholder="Name" class="full-width">
+    <input type="email" placeholder="Name" class="full-width">
+    <input type="search" placeholder="Name" class="full-width">
     <ul class="bordered">
-        <li>ListItem 1</li>
-        <li>ListItem 2</li>
-        <li>ListItem 3</li>
-        <li class="selected">ListItem 4</li>
+        <ul class="group">
+            <span class="group-name">Gruppe1</span>
+            <li>ListItem 1</li>
+            <li>ListItem 2</li>
+            <li>ListItem 3</li>
+            <li class="selected">ListItem 4</li>
+        </ul>
         <li>ListItem 5</li>
         <li>ListItem 6</li>
         <li>ListItem 7</li>
@@ -63,7 +92,7 @@
         <dt>AARP</dt>
         <dd>Appletalk Address Resolution Protocol</dd>
     </dl>
-    <!-- <div class="input-container">
+    <div class="input-container">
         <input class="search" placeholder="search.." type="text">
     </div>
     <div class="input-container">
@@ -79,6 +108,8 @@
         <button class="rounded">BlaButton</button>
     </div>
     <button class="inverted">Test Button 2</button>
+    <button class="inverted thick-border white">Test Button 2</button>
+    <button class="inverted thick-border">Test Button 2</button>
     <button class="confirm inverted">Test Submit Button</button>
     <button class="decline inverted">Test Warning Button</button>
     <div class="button-group full-width">
@@ -92,7 +123,10 @@
         <button class="small">Test Button</button>
         <button class="squared">TestBB</button>
         <button class="rounded">BlaButton</button>
-    </div>-->
+    </div>
+    <br>
+    <br>
+    <br>
     <nav class="tabs-bottom">
         <div class="tab width-20">
             <span class="notification"><span class="notification-text">2</span></span>

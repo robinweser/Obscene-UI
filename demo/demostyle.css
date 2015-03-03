@@ -8,8 +8,8 @@ body {
 }
 
 body {
-    background-image: url('resource/background.jpg') !important;
+    /*background-image: url('resource/background.jpg') !important;
     background-size: 100% 100% !important;
-    background-attachment: fixed;
-    background-color: #898989;
+    background-attachment: fixed;*/
+    background-color: #3c3c3c;
 }

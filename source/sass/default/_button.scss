@@ -2,6 +2,7 @@ button {
     color: $button-color;
     padding: 12px;
     margin: 4px;
+    outline: none;
     border: $default-border-width $default-border-style $button-border-color;
     background-color: $button-background-color;
     @include border-radius($button-border-radius);

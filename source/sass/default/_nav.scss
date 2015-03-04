@@ -27,6 +27,7 @@ nav {
             overflow: hidden;
             color: $nav-tab-color;
             text-align: center;
+            font-size: 0px;
             .notification {
                 width: auto;
                 max-width: 100px;
@@ -51,7 +52,7 @@ nav {
             }
             .tab-name {
                 display: block;
-                margin-top: -5px;
+                margin-top: -3px;
                 font-size: $nav-tab-font-size;
             }
             img {
@@ -77,7 +78,7 @@ nav {
         border-bottom: $default-border;
         background-color: $nav-background-color;
         @extend .center;
-        padding: 7px 0;
+        padding: 7px;
         .tab {
             font-size: 13px;
             padding: 6px 8px;

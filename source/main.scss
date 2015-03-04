@@ -58,8 +58,11 @@ html, body {
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
     font-family: $default-font;
-    font-size: $default-font-size;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+        font-size: $default-font-size;
 }
 
 header,

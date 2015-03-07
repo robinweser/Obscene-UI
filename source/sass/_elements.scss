@@ -4,16 +4,18 @@
 @import 'default/p';
 @import 'default/nav';
 @import 'default/body';
+@import 'default/html';
 @import 'default/hr';
 @import 'default/list';
 @import 'default/scrollbar';
+
 .input-container {
-    @extend .full-width;
+    @extend .width-full;
     padding: 5px 8px;
     background-color: $header-background-color;
     border-bottom: $default-border;
     input {
-        @extend .full-width;
+        @extend .width-full;
         &.text, &[type="text"] {
             border: 1px solid #9b9b9b;
             @include border-radius(10px);
@@ -29,18 +31,18 @@
 .button-group {
     button {
         margin: 0 !important;
-        &.full-width {
+        &.width-full {
             border-width: 0px 0px 1px 0px !important;
         }
     }
     button:first-child {
-        &.full-width {
+        &.width-full {
             border-width: 1px 0px 1px 0px !important
         }
     }
-    &.full-width {
+    &.width-full {
         button {
-            @extend .full-width;
+            @extend .width-full;
             border-width: 0px 0px 1px 0px !important;
         }
         button:first-child {

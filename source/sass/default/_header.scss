@@ -1,5 +1,5 @@
 header {
-    @extend .full-width;
+    @extend .width-full;
     display: table;
     text-align: center;
     text-transform: uppercase;
@@ -20,7 +20,7 @@ header {
     .header-buttons-left,
     .header-buttons-right {
         position: absolute;
-        button {
+        button, input[type="submit"], a {
             @extend button.link;
             font-size: $header-font-size;
             margin: 0 3px;

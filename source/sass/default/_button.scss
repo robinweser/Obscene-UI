@@ -22,18 +22,18 @@ button {
     &.decline {
         background-color: $button-decline-background-color;
     }
-    &.full-width {
+    &.width-full {
         margin: 0;
         border-width: 1px 0px 1px 0px;
     }
-    &.full-width,
+    &.width-full,
     &.squared {
         @include border-radius($button-squared-border-radius);
     }
     &.rounded {
         @include border-radius($button-rounded-border-radius);
     }
-    &.inverted {
+    &.outlined {
         background-color: transparent;
         border-color: $button-background-color;
         color: $button-background-color;
@@ -52,5 +52,10 @@ button {
             border-color: white;
             color: white;
         }
+    }
+    &.clear {
+        border-color: transparent;
+        background-color: transparent;
+        color: $default-color;
     }
 }

@@ -1,7 +1,11 @@
-.full-width {
+.width-full {
     width: 100%;
     max-width: 100%;
     display: block;
+}
+
+.width-100{
+    width: 100%;
 }
 
 .width-90 {
@@ -78,6 +82,10 @@
 
 .fixed {
     position: fixed;
+}
+
+.absolute {
+    position: absolute;
 }
 
 .text-left {

@@ -1,4 +1,4 @@
-@import "lib/normalize";
+//@import "lib/normalize";
 
 /* DEFAULT */
 $default-color: rgb(102, 102, 102);
@@ -29,8 +29,7 @@ $header-font-size: 15px;
 $nav-background-color: rgba(255, 255, 255, 0.95);
 $nav-tab-color: rgba(150, 150, 150, 1);
 $nav-tab-border-color: rgba(177, 177, 177, 0.5);
-$nav-tab-top-background-color: rgba(204, 204, 204, 0.85);
-$nav-tab-top-active-background-color: rgba(204, 204, 204, 0);
+$nav-tab-top-background-color: rgba(204, 204, 204, 0);
 $nav-tab-font-size: 9px;
 $nav-tab-active-color: rgb(26, 26, 26);
 $nav-notification-font-size: 9px;
@@ -44,12 +43,6 @@ $nav-notification-background-color: rgb(44, 67, 128);
 @import "sass/layout";
 @import "sass/elements";
 
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
-*,
 *:before,
 *:after {
     padding: 0;
@@ -58,17 +51,19 @@ html, body {
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
     font-family: $default-font;
-    font-size: $default-font-size;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+    font-size: $default-font-size;
 }
 
 header,
 #ios-statusbar,
 nav,
-.tab,
-.tabs-top,
+.tabs-top, .tab,
 .tabs-bottom, button, input[type="search"],
-input,.group, .group-name,
+input, .group, .group-name,
 div, ol, ul, dl, li, hr, p, button {
     box-sizing: border-box;
 }

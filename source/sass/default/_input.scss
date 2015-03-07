@@ -43,7 +43,7 @@ input {
         background-position: 8px center;
         background-repeat: no-repeat;
     }
-    &.full-width {
+    &.width-full {
         border-width: 1px 0px 1px 0px;
         @include border-radius(0px);
     }

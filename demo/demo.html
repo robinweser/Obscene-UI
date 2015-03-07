@@ -4,7 +4,8 @@
 
 <head>
     <link rel="stylesheet" href="demostyle.css">
-    <link rel="stylesheet" href="../bin/obscene.css">
+    <link rel="stylesheet" href="../bin/normalize.css">
+    <link rel="stylesheet" href="../bin/obscene.min.css">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <meta http-equiv=content-type content="text/html; charset=utf-8">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400,300' rel='stylesheet' type='text/css'>
@@ -16,7 +17,7 @@
     </div>
     <header><span class="header-buttons-left"><button>< Back</button></span>Hallo<span class="header-buttons-right"><button>+</button></span>
     </header>
-    <nav class="tabs-top">
+    <nav class="tabs-striped">
         <div class="tab width-33">
             Tab Nummer 1
         </div>
@@ -39,30 +40,21 @@
         </div>
     </nav>
     <input type="submit">
-    <input type="submit" class="full-width">
-    <button class="full-width">Hallo</button>
-    <input type="range" class="full-width">
+    <input type="submit" class="width-full">
+    <button class="width-full">Hallo</button>
+    <input type="range" class="width-full">
     <br>
-    <input type="range" class="full-width">
-    <input type="range" class="full-width">
-    <br>
-    <div class="switch">
-        <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
-        <label for="cmn-toggle-1"></label>
-    </div>
-    <br>
-    <div class="switch">
-        <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round" type="checkbox">
-        <label for="cmn-toggle-2"></label>
-    </div>
+    <input type="range" class="width-full">
+    <input type="range" class="width-full">
+    <input class="switch" id="bla" type="checkbox"><label for="bla"></label>
     <input type="text" placeholder="Name">
     <input type="password" placeholder="Name">
     <input type="email" placeholder="Name">
     <input type="search" placeholder="Name">
-    <input type="text" placeholder="Name" class="full-width">
-    <input type="password" placeholder="Name" class="full-width">
-    <input type="email" placeholder="Name" class="full-width">
-    <input type="search" placeholder="Name" class="full-width">
+    <input type="text" placeholder="Name" class="width-full">
+    <input type="password" placeholder="Name" class="width-full">
+    <input type="email" placeholder="Name" class="width-full">
+    <input type="search" placeholder="Name" class="width-full">
     <ul class="bordered">
         <ul class="group">
             <span class="group-name">Gruppe1</span>
@@ -98,8 +90,8 @@
     <div class="input-container">
         <input placeholder="username" type="text">
     </div>
-    <input placeholder="username" type="text" class="full-width">
-    <input placeholder="username" type="text" class="full-width">
+    <input placeholder="username" type="text" class="width-full">
+    <input placeholder="username" type="text" class="width-full">
     <br>
     <br>
     <div class="center">
@@ -112,7 +104,7 @@
     <button class="inverted thick-border">Test Button 2</button>
     <button class="confirm inverted">Test Submit Button</button>
     <button class="decline inverted">Test Warning Button</button>
-    <div class="button-group full-width">
+    <div class="button-group width-full">
         <button>Test Button</button>
         <button>Test Button 2</button>
         <button class="confirm">Test Submit Button</button>
@@ -128,16 +120,16 @@
     <br>
     <br>
     <nav class="tabs-bottom">
-        <div class="tab width-20">
+        <div class="tab width-50">
             <span class="notification"><span class="notification-text">2</span></span>
             <img src="resource/gruppenstunden.png">
             <span class="tab-name">Sammlung</span>
         </div>
-        <div class="tab width-20 active">
+        <div class="tab width-50 active">
             <img src="resource/inbox.png">
             <span class="tab-name">Eingang</span>
         </div>
-        <div class="tab width-20">
+        <!-- <div class="tab width-20">
             <img src="resource/gruppenstunden.png">
             <span class="tab-name">Sammlung</span>
         </div>
@@ -149,7 +141,7 @@
         <div class="tab width-20">
             <img src="resource/gruppenstunden.png">
             <span class="tab-name">Sammlung</span>
-        </div>
+        </div>-->
     </nav>
 </body>
 

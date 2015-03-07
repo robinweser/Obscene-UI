@@ -1,24 +1,24 @@
 nav {
-    @extend .full-width;
+    @extend .width-full;
     @extend .hbox;
-    &.tabs-top {
-        border-bottom: $default-border;
+    &.tabs-striped {
         background-color: $nav-background-color;
         .tab {
             padding: 12px 0;
             text-align: center;
+            border-bottom: $default-border;
             overflow: hidden;
-            @include opacity(0.5);
             background: $nav-tab-top-background-color;
             &.active {
-                background: $nav-tab-top-active-background-color;
-                @include opacity(1);
+                box-shadow: inset 0 -3px 0 $default-border-color;
             }
         }
     }
     &.tabs-bottom {
         @extend .bottom;
-        @extend .fixed;
+        @extend .absolute;
+        left: 0;
+        right: 0;
         z-index: $stack-nav-bottom;
         border-top: $default-border;
         background-color: $nav-background-color;

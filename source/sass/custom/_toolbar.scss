@@ -1,0 +1,48 @@
+.toolbar {
+    @extend .width-full;
+    @extend .hbox;
+    text-align: center;
+    font-size: $default-font-size;
+    max-width: 100%;
+    padding: 7px 7px 8px 7px;
+    background-color: $nav-background-color;
+    &.bordered {
+        border-top: $default-border;
+        border-bottom: $default-border;
+    }
+    .area-left {
+        float: left;
+    }
+    .area-right {
+        float: right;
+    }
+    .area-left,
+    .area-right {
+        @extend .hbox;
+        button, input[type="submit"], input[type="text"], input[type="search"], input[type="number"], a {
+            @extend button.small;
+            font-size: $header-font-size;
+            margin: 0 3px;
+        }
+        input[type="search"] {
+            padding: 7px 8px 7px 35px;
+        }
+        button {
+            &.thick-border {
+                padding: 7px 8px;
+            }
+        }
+        input,
+        button,
+        a, nav, div, span {
+            display: table-cell;
+        }
+    }
+    nav.tabs-segmented {
+        padding: 3px 2px 2px 2px;
+        z-index: 100;
+        background-color: transparent;
+        border: none;
+        vertical-align: top;
+    }
+}

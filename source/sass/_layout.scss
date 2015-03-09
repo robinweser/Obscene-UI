@@ -4,7 +4,7 @@
     display: block;
 }
 
-.width-100{
+.width-100 {
     width: 100%;
 }
 
@@ -129,12 +129,16 @@
     }
 }
 
+.scroll-horizontal {
+    overflow-x: auto;
+    white-space: nowrap;
+    div, span, nav {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
 .fit {
     width: 100%;
     height: 100%;
-}
-
-.scroll-horizontal{
-    overflow-x: auto;
-    white-space: nowrap;
 }

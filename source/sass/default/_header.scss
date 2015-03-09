@@ -1,7 +1,7 @@
 header {
     @extend .width-full;
-    display: table;
-    text-align: center;
+    @extend .toolbar;
+    @extend .center;
     text-transform: uppercase;
     padding: 12px 6px;
     font-size: $header-font-size;
@@ -9,21 +9,9 @@ header {
     border-bottom: $default-border;
     color: $default-color;
     vertical-align: 2px;
-    .header-buttons-left {
-        @extend .left;
-        margin-left: 3px;
-    }
-    .header-buttons-right {
-        @extend .right;
-        margin-right: 3px;
-    }
-    .header-buttons-left,
-    .header-buttons-right {
-        position: absolute;
-        button, input[type="submit"], a {
-            @extend button.clear;
-            font-size: $header-font-size;
-            margin: 0 3px;
-        }
+    button, input[type="submit"], a {
+        @extend button.clear;
+        font-size: $header-font-size;
+        margin: 0 3px;
     }
 }

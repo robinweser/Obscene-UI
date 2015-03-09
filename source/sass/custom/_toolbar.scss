@@ -1,7 +1,7 @@
 .toolbar {
     @extend .width-100;
     font-size: $default-font-size;
-    padding: 7px 5px 8px 5px;
+    padding: 6px 3px;
     display: table;
     background-color: $nav-background-color;
     &.bordered {
@@ -25,5 +25,38 @@
     .area-left,
     .area-right {
         @extend .hbox;
+    }
+    button,
+    input[type="submit"],
+    input[type="text"],
+    input[type="search"],
+    input[type="number"],
+    a {
+         padding: 8px;
+        font-size: $header-font-size;
+        margin: 0 3px;
+    }
+    input[type="search"] {
+        padding: 7px 8px 7px 35px;
+    }
+    button {
+        &.thick-border {
+            padding: 7px 8px;
+        }
+    }
+    .tabs-segmented {
+        padding: 3px 2px 2px 2px;
+        background-color: transparent;
+        border: none;
+        vertical-align: top;
+        display: inline-block;
+    }
+    div,
+    span,
+    button,
+    input,
+    a,
+    nav {
+        display: inline-block;
     }
 }

@@ -21,7 +21,7 @@ header {
     .header-buttons-right {
         position: absolute;
         button, input[type="submit"], a {
-            @extend button.link;
+            @extend button.clear;
             font-size: $header-font-size;
             margin: 0 3px;
         }

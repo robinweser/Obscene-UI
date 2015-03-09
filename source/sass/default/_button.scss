@@ -6,7 +6,7 @@ button {
     border: $default-border-width $default-border-style $button-border-color;
     background-color: $button-background-color;
     @include border-radius($button-border-radius);
-    &.link {
+    &.clear {
         background-color: transparent;
         padding: 0;
         border: 0;
@@ -53,10 +53,5 @@ button {
             border-color: white;
             color: white;
         }
-    }
-    &.clear {
-        border-color: transparent;
-        background-color: transparent;
-        color: $default-color;
     }
 }

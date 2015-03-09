@@ -17,7 +17,7 @@ nav {
     }
     &.tabs-bottom {
         @extend .bottom;
-        @extend .absolute;
+        @extend .fixed;
         left: 0;
         right: 0;
         z-index: $stack-nav-bottom;
@@ -31,7 +31,7 @@ nav {
             font-size: 0px;
             .notification {
                 width: auto;
-                max-width: 100px;
+                max-width: 70px;
                 display: block;
                 height: 0;
                 margin: 0 auto;

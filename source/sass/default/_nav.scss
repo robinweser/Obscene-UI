@@ -11,7 +11,8 @@ nav {
             background: $nav-tab-top-background-color;
             &.active {
                 color: $button-confirm-background-color;
-                box-shadow: inset 0 -3px 0 $button-confirm-background-color;
+                padding-bottom: 9px;
+                border-bottom: 4px solid $button-confirm-background-color;
             }
         }
     }

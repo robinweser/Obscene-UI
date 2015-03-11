@@ -63,9 +63,8 @@ header,
 #ios-statusbar,
 nav,
 .tabs-top, .tab,
-.tabs-bottom, input[type="search"],
+.tabs-bottom, textarea,
 input, .group, .group-name,
 div, ol, ul, dl, li, hr, p, button {
     box-sizing: border-box;
 }
-

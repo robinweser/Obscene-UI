@@ -1,0 +1,15 @@
+textarea {
+    -webkit-border-radius: 0;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+    &.width-full {
+        border-width: 1px 0px 1px 0px;
+        @include border-radius(0px);
+    }
+    padding: 10px 8px;
+    font-size: 14px;
+    border: $default-border;
+    @include border-radius(5px);
+}

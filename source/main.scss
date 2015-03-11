@@ -1,5 +1,3 @@
-@import "lib/normalize";
-
 /* DEFAULT */
 $default-color: rgb(102, 102, 102);
 $default-font: "Open Sans", "Lato", sans-serif;
@@ -38,6 +36,7 @@ $nav-notification-font-size: 10px;
 $nav-notification-border-color: rgb(51, 75, 139);
 $nav-notification-background-color: rgb(44, 67, 128);
 
+@import "lib/normalize";
 @import "sass/stackOrder";
 @import "sass/misc";
 @import "sass/mixins";

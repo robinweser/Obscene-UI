@@ -1,10 +1,11 @@
-//@import "lib/normalize";
+@import "lib/normalize";
 
 /* DEFAULT */
 $default-color: rgb(102, 102, 102);
 $default-font: "Open Sans", "Lato", sans-serif;
 $default-font-size: 14px;
 $default-text-padding: 10px;
+$default-box-padding: 5px;
 
 /* DEFAULT BORDER */
 $default-border-color: rgba(177, 177, 177, 0.8);
@@ -21,6 +22,7 @@ $button-border-radius: 8px;
 $button-rounded-border-radius: 50px;
 $button-squared-border-radius: 0;
 $button-small-font-size: 10px;
+$button-large-font-size: 20px;
 
 /* Header */
 $header-background-color: rgba(255, 255, 255, 0.85);
@@ -36,7 +38,7 @@ $nav-notification-font-size: 10px;
 $nav-notification-border-color: rgb(51, 75, 139);
 $nav-notification-background-color: rgb(44, 67, 128);
 
-@import "sass/stackorder";
+@import "sass/stackOrder";
 @import "sass/misc";
 @import "sass/mixins";
 @import "sass/ios";
@@ -52,6 +54,8 @@ $nav-notification-background-color: rgb(44, 67, 128);
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
     font-family: $default-font;
+    box-sizing: border-box;
+    position: relative;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -65,6 +69,11 @@ nav,
 .tabs-top, .tab,
 .tabs-bottom, textarea,
 input, .group, .group-name,
-div, ol, ul, dl, li, hr, p, button {
+div, ol, ul, dl, li, hr, p, code, button, span, div {
     box-sizing: border-box;
+}
+
+button, a, code {
+    display: inline-block;
+    //background-clip: padding-box;
 }

@@ -9,9 +9,7 @@ select {
     &.width-full {
         @extend input.width-full;
     }
-    optgroup {}
-    option {
-        -webkit-appearance: none;
+    option, optgroup {
         font-size: 20px;
     }
 }

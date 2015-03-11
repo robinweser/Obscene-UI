@@ -1,0 +1,22 @@
+progress {
+    -webkit-appearance: none;
+    height: 30px;
+    &.width-full {
+        &::-webkit-progress-bar {
+            @include border-radius(0);
+            border-width: 1px 0 0 1px;
+        }
+        &::-webkit-progress-value {
+            @include border-radius(0);
+        }
+    }
+    &::-webkit-progress-bar {
+        background-color: #d3d3d3;
+        @include border-radius(5px);
+        border: $default-border;
+    }
+    &::-webkit-progress-value {
+        background-color: $button-confirm-background-color;
+        @include border-radius(5px 0 0 5px);
+    }
+}

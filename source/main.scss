@@ -22,6 +22,7 @@ $button-border-radius: 8px;
 $button-rounded-border-radius: 50px;
 $button-squared-border-radius: 0;
 $button-small-font-size: 10px;
+$button-large-font-size: 20px;
 
 /* Header */
 $header-background-color: rgba(255, 255, 255, 0.85);
@@ -37,7 +38,7 @@ $nav-notification-font-size: 10px;
 $nav-notification-border-color: rgb(51, 75, 139);
 $nav-notification-background-color: rgb(44, 67, 128);
 
-@import "sass/stackorder";
+@import "sass/stackOrder";
 @import "sass/misc";
 @import "sass/mixins";
 @import "sass/ios";
@@ -53,6 +54,7 @@ $nav-notification-background-color: rgb(44, 67, 128);
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
     font-family: $default-font;
+        box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -66,12 +68,12 @@ nav,
 .tabs-top, .tab,
 .tabs-bottom, input[type="search"],
 input, .group, .group-name,
-div, ol, ul, dl, li, hr, p, code, button {
+div, ol, ul, dl, li, hr, p, code, button, span, div {
     box-sizing: border-box;
 }
 
 button, a, code {
-    display: inline-block;
+   display: inline-block;
     //background-clip: padding-box;
 }
 

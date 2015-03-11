@@ -32,15 +32,19 @@
     input[type="search"],
     input[type="number"],
     a {
-         padding: 8px;
+        padding: 8px;
         font-size: $header-font-size;
         margin: 0 3px;
     }
-    input[type="range"]{
+    input[type="range"] {
         padding-top: 14px;
     }
     input[type="search"] {
         padding: 7px 8px 7px 35px;
+    }
+    input[type="checkbox"]+label {
+        top: -3px;
+        margin: 0 3px;
     }
     button {
         &.thick-border {

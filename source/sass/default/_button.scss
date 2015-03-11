@@ -17,6 +17,10 @@ button {
         font-size: $button-small-font-size;
         padding: 8px;
     }
+    &.large {
+        font-size: $button-large-font-size;
+        padding: 12px;
+    }
     &.confirm {
         background-color: $button-confirm-background-color;
     }

@@ -1,7 +1,8 @@
 body {
-    @extend .fit;
+    @extend .width-100;
     overflow-x: hidden;
     overflow-y: auto;
+    height: auto;
     &.ios-statusbar {
         margin-top: 21px;
     }

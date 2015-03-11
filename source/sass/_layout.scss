@@ -142,3 +142,45 @@
     width: 100%;
     height: 100%;
 }
+
+.text-padding {
+    padding: $default-text-padding;
+}
+
+.box-padding {
+    padding: $default-box-padding;
+}
+
+.border-top {
+    border-top: $default-border;
+}
+
+.border-bottom {
+    border-bottom: $default-border;
+}
+
+.border-left {
+    border-left: $default-border;
+}
+
+.border-right {
+    border-right: $default-border;
+}
+
+.border-vertical {
+    border: $default-border;
+    border-width: 1px 0 1px 0;
+}
+
+.border-horizontal {
+    border: $default-border;
+    border-width: 0px 1px 0 1px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}

@@ -1,0 +1,6 @@
+a {
+    &.button {
+        @extend button;
+        text-decoration: none;
+    }
+}

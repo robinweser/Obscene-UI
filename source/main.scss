@@ -1,10 +1,11 @@
-//@import "lib/normalize";
+@import "lib/normalize";
 
 /* DEFAULT */
 $default-color: rgb(102, 102, 102);
 $default-font: "Open Sans", "Lato", sans-serif;
 $default-font-size: 14px;
 $default-text-padding: 10px;
+$default-box-padding: 5px;
 
 /* DEFAULT BORDER */
 $default-border-color: rgba(177, 177, 177, 0.8);
@@ -65,7 +66,12 @@ nav,
 .tabs-top, .tab,
 .tabs-bottom, input[type="search"],
 input, .group, .group-name,
-div, ol, ul, dl, li, hr, p, button {
+div, ol, ul, dl, li, hr, p, code, button {
     box-sizing: border-box;
+}
+
+button, a, code {
+    display: inline-block;
+    //background-clip: padding-box;
 }
 

@@ -1,7 +1,10 @@
 a {
-            -webkit-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
     &.button {
         @extend button;
         text-decoration: none;
+            -webkit-appearance: none;
+    appearance: none;
     }
 }

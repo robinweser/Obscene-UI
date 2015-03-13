@@ -65,3 +65,14 @@
 @function tint($color, $percent) {
     @return mix(white, $color, $percent);
 }
+
+@mixin box-sizing($boxmodel) {
+	-webkit-box-sizing: $boxmodel;
+	-moz-box-sizing: $boxmodel;
+	box-sizing: $boxmodel;
+}
+
+@mixin apperance($apperance){
+    -webkit-appearance: $appearance;
+    appearance: $appearance;
+}

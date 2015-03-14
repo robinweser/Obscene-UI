@@ -4,7 +4,7 @@ progress {
     &.width-full {
         &::-webkit-progress-bar {
             @include border-radius(0);
-            border-width: 1px 0 0 1px;
+            border-width: 1px 0 1px 0;
         }
         &::-webkit-progress-value {
             @include border-radius(0);

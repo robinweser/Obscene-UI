@@ -1,0 +1,29 @@
+.center {
+    text-align: center;
+    div, span {
+        margin: 0 auto;
+    }
+}
+
+.vbox,
+.hbox {
+    @extend .inline-block-margin-fix;
+}
+
+.vbox {
+    div, span {
+        clear: right;
+    }
+}
+
+.hbox {
+    div, span {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+.fit {
+    width: 100%;
+    height: 100%;
+}

@@ -29,7 +29,7 @@ button {
     }
     &.width-full {
         margin: 0;
-        border-width: 1px 0px 1px 0px;
+        @extend .border-width-full;
     }
     &.width-full,
     &.squared {
@@ -52,6 +52,9 @@ button {
         }
         &.thick-border {
             border-width: 2px;
+            &.width-full {
+                border-width: 2px 0 2px 0;
+            }
         }
         &.white {
             border-color: white;

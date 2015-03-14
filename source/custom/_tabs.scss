@@ -1,0 +1,124 @@
+.tabs-striped {
+    background-color: $nav-background-color;
+    .tab {
+        padding: 12px 0;
+        text-align: center;
+        border-bottom: $default-border;
+        overflow: hidden;
+        background: $nav-tab-top-background-color;
+        &.active {
+            color: $button-confirm-background-color;
+            padding-bottom: 9px;
+            border-bottom: 4px solid $button-confirm-background-color;
+        }
+    }
+}
+
+.tabs-bottom {
+    @extend .bottom;
+    @extend .fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-top: $default-border;
+    background-color: $nav-background-color;
+    .tab {
+        padding: 3px 0 2px;
+        overflow: hidden;
+        color: $nav-tab-color;
+        text-align: center;
+        font-size: 0px;
+        .notification {
+            width: auto;
+            max-width: 70px;
+            display: block;
+            height: 0;
+            margin: 0 auto;
+            border-right: $default-border;
+            text-align: right;
+            .notification-text {
+                color: white;
+                padding: 2px 6px;
+                overflow: hidden;
+                margin: 0 2px;
+                position: relative;
+                z-index: 11;
+                background-color: $button-background-color;
+                font-size: $nav-notification-font-size;
+                border: $default-border;
+                border-color: $button-background-color;
+                @include border-radius(50px);
+            }
+        }
+        .tab-name {
+            display: block;
+            margin-top: -3px;
+            font-size: $nav-tab-font-size;
+        }
+        img {
+            @include opacity(0.4);
+            height: 33px;
+            width: auto;
+            margin-top: -2px;
+        }
+        &.active {
+            color: $nav-tab-active-color;
+        }
+        &.active img {
+            @include opacity(1);
+        }
+    }
+    &.icon-only {
+        .tab {
+            padding: 6px 0 2px;
+        }
+    }
+}
+
+.tabs-segmented {
+    border-bottom: $default-border;
+    background-color: $nav-background-color;
+    @extend .center;
+    padding: 7px;
+    .tab {
+        font-size: 13px;
+        padding: 6px 8px;
+        min-width: 50px;
+        text-align: center;
+        overflow: hidden;
+        background-color: transparent;
+        border: $default-border;
+        border-width: 1px 0px 1px 0px;
+        &.active {
+            background-color: $default-border-color;
+            color: white;
+        }
+        &:first-child {
+            @include border-radius(5px 0px 0px 5px);
+            border-left: $default-border;
+        }
+        &:last-child {
+            @include border-radius(0px 5px 5px 0px);
+            border-right: $default-border;
+        }
+    }
+    &.bordered {
+        .tab {
+            border-right: $default-border;
+            &:last-child {
+                border-right: $default-border;
+            }
+        }
+    }
+}
+
+.tabs-striped, .tabs-bottom {
+    &.bordered {
+        .tab {
+            border-right: $default-border-width $default-border-style $nav-tab-border-color;
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+}

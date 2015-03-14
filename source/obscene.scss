@@ -1,0 +1,29 @@
+@import "lib/normalize";
+
+@import "var";
+@import "core";
+@import "custom";
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    font-family: $default-font;
+    @include box-sizing(border-box);
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-overflow-scrolling: touch;
+}
+
+* {
+    font-size: $default-font-size;
+}
+
+button, a, code {
+    display: inline-block;
+    //background-clip: padding-box;
+}

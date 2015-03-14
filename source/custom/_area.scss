@@ -1,0 +1,13 @@
+.area-left {
+    float: left;
+}
+
+.area-right {
+    float: right;
+    clear: right;
+}
+
+.area-left,
+.area-right {
+    @extend .hbox;
+}

@@ -7,7 +7,7 @@ module.exports = function (grunt) {
                     style: "compressed"
                 },
                 files: {
-                    'bin/obscene.min.css': 'source/main.scss'
+                    'bin/obscene.min.css': 'source/obscene.scss'
                 }
             }
         }

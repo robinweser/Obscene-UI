@@ -1,6 +1,5 @@
 header {
     @extend .width-full;
-    @extend .toolbar;
     @extend .center;
     text-transform: uppercase;
     padding: 12px 6px;
@@ -13,5 +12,6 @@ header {
         @extend button.clear;
         font-size: $header-font-size;
         margin: 0 3px;
+        padding: 0;
     }
 }

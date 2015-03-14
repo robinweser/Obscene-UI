@@ -3,7 +3,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     height: auto;
-    &.ios-statusbar {
+    &.with-ios-statusbar {
         margin-top: 21px;
     }
 }

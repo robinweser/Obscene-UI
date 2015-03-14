@@ -1,0 +1,101 @@
+$widths: 5, 10, 20, 25, 30, 40, 50, 70, 75, 80, 90, 100;
+$fixed: top, left, right, bottom;
+$text-align: left, right, center, justify;
+
+@each $width in $widths {
+    .width-#{$width} {
+        width: percentage($width / 100);
+    }
+}
+
+.width-66 {
+    width: 66.666666667%;
+}
+
+.width-33 {
+    width: 33.3333333334%;
+}
+
+.width-full {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    display: block;
+}
+
+@each $fix in $fixed {
+    .#{$fix} {
+        #{$fix}: 0;
+    }
+}
+
+@each $align in $text-align {
+    .text-#{$align} {
+        text-align: $align;
+    }
+}
+
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.text-padding {
+    padding: $default-text-padding;
+}
+
+.box-padding {
+    padding: $default-box-padding;
+}
+
+.border-top {
+    border-top: $default-border;
+}
+
+.border-bottom {
+    border-bottom: $default-border;
+}
+
+.border-left {
+    border-left: $default-border;
+}
+
+.border-right {
+    border-right: $default-border;
+}
+
+.border-width-full {
+    border-width: 1px 0 1px 0;
+}
+
+.border-vertical {
+    border: $default-border;
+    @extend .border-width-full;
+}
+
+.border-horizontal {
+    border: $default-border;
+    border-width: 0 1px 0 1px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.invisible {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}

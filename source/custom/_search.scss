@@ -5,4 +5,13 @@ input[type="search"] {
     background-size: auto 50%;
     background-position: 8px center;
     background-repeat: no-repeat;
+    @include transition(all 150ms linear);
+    &.slide-icon {
+        background-position: calc(50% - 25px) center;
+        color: rgba(0,0,0,0);
+        &:focus {
+            background-position: 8px center;
+            color: $default-color;
+        }
+    }
 }

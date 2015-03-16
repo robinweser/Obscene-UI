@@ -1,0 +1,38 @@
+.form {
+    &-inline, &-stacked {
+        @extend .width-full;
+        input {
+            background-color: transparent;
+            border: none;
+            margin: 0;
+        }
+        label {
+            display: inline-block;
+        }
+        input,
+        label {
+            padding: $default-text-padding;
+        }
+    }
+    &-inline {
+        input {
+            width: 70%;
+        }
+        label {
+            width: 30%;
+        }
+        input,
+        label {
+            border-bottom: $default-border;
+        }
+    }
+    &-stacked {
+        label, input {
+            display: block;
+            width: 100%;
+        }
+        input {
+            border-bottom: $default-border;
+        }
+    }
+}

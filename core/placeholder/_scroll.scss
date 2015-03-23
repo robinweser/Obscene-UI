@@ -1,4 +1,4 @@
-.scroll-horizontal {
+%scroll-horizontal {
     overflow-x: auto;
     white-space: nowrap;
     div, span, nav {
@@ -7,15 +7,15 @@
     }
 }
 
-.scroll-vertical {
+%scroll-vertical {
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-.no-scroll {
+%no-scroll {
     overflow: hidden;
 }
 
-.no-scrollbar::-webkit-scrollbar {
+%no-scrollbar::-webkit-scrollbar {
     display: none;
 }

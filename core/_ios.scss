@@ -1,8 +1,7 @@
 #ios-statusbar {
-    @extend .top;
-    @extend .fixed;
+    @extend %top;
+    @extend %fixed;
     height: 21px;
     width: 100%;
     display: block;
-    background-color: transparent;
 }

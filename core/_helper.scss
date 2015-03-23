@@ -1,0 +1,101 @@
+$widths: 5, 10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 100;
+$fixed: top, left, right, bottom;
+$text-align: left, right, center, justify;
+
+@each $width in $widths {
+    .width-#{$width} {
+        width: percentage($width / 100);
+    }
+}
+
+.width-66 {
+    width: 66.666666667%;
+}
+
+.width-33 {
+    width: 33.3333333334%;
+}
+
+.width-full {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    display: block;
+}
+
+@each $fix in $fixed {
+    .#{$fix} {
+        #{$fix}: 0;
+    }
+}
+
+@each $align in $text-align {
+    .text-#{$align} {
+        text-align: $align;
+    }
+}
+
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.invisible {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+
+.round {
+    @include border-radius(50%);
+}
+
+/* Scroll */
+.scroll-horizontal {
+    overflow-x: auto;
+    white-space: nowrap;
+    div, span, nav {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+.scroll-vertical {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Fixes */
+.inline-block-margin-fix {
+    font-size: 0px;
+}
+
+.clear-fix {
+    content: "";
+    display: table;
+    clear: both;
+}

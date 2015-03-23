@@ -23,14 +23,14 @@
     border-top: $default-border;
     background-color: $nav-background-color;
     .tab {
-        padding: 3px 0 2px;
+        padding: 3px 0 1px;
         overflow: hidden;
         color: $nav-tab-color;
         text-align: center;
         font-size: 0px;
         .notification {
             width: auto;
-            max-width: 70px;
+            max-width: 60px;
             display: block;
             height: 0;
             margin: 0 auto;
@@ -43,22 +43,20 @@
                 margin: 0 2px;
                 position: relative;
                 z-index: 11;
-                background-color: $button-background-color;
+                background-color: $nav-notification-background-color;
                 font-size: $nav-notification-font-size;
-                border: $default-border;
-                border-color: $button-background-color;
                 @include border-radius(50px);
             }
         }
         .tab-name {
             display: block;
-            margin-top: -3px;
             font-size: $nav-tab-font-size;
         }
         img {
             @include opacity(0.4);
-            height: 33px;
+            height: 35px;
             width: auto;
+            padding: 2px;
             margin-top: -2px;
         }
         &.active {

@@ -30,6 +30,7 @@ dl {
                 background-color: rgb(219, 219, 219);
                 color: $default-color;
                 padding: 6px 10px 7px;
+                font-weight: 700;
                 border-bottom: $default-border;
             }
         }
@@ -38,7 +39,7 @@ dl {
 
 ul {
     li {
-        @extend .width-full;
+        @extend .width-100;
         list-style-type: none;
     }
     &.floating {
@@ -51,6 +52,7 @@ ul {
             }
         }
         &.bordered {
+            border: none;
             li {
                 border-right: $default-border;
                 &:last-child {

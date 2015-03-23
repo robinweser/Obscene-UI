@@ -1,8 +1,6 @@
-@import "lib/normalize";
-
-@import "var";
-@import "core";
-@import "custom";
+* {
+    font-size: $default-font-size;
+}
 
 *,
 *:before,
@@ -17,10 +15,6 @@
     position: relative;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-overflow-scrolling: touch;
-}
-
-* {
-    font-size: $default-font-size;
 }
 
 button, a, code {

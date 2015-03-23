@@ -7,7 +7,7 @@
 
 .vbox,
 .hbox {
-    @extend .inline-block-margin-fix;
+    @extend %inline-block-margin-fix;
 }
 
 .vbox {

@@ -7,11 +7,15 @@ input[type="search"] {
     background-repeat: no-repeat;
     @include transition(all 150ms linear);
     &.slide-icon {
-        background-position: calc(50% - 25px) center;
-        color: rgba(0,0,0,0);
+        padding-left: 10px;
+        padding-right: 35px;
+        background-position: 50% center;
+        color: rgba(0, 0, 0, 0.2);
         &:focus {
             background-position: 8px center;
             color: $default-color;
+        padding-left: 35px;
+        padding-right: 10px;
         }
     }
 }

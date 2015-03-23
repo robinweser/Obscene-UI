@@ -1,8 +1,8 @@
-.inline-block-margin-fix {
+%inline-block-margin-fix {
     font-size: 0px;
 }
 
-.clear-fix {
+%clear-fix {
     content: "";
     display: table;
     clear: both;

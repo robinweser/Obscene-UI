@@ -1,8 +1,6 @@
 a {
-    @include appearance(none);
     &.button {
         @extend button;
         text-decoration: none;
-        @include appearance(none);
     }
 }

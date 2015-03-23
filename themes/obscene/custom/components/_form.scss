@@ -1,7 +1,7 @@
 .form {
     &-inline, &-stacked {
-        @extend .width-full;
-        @extend .inline-block-margin-fix;
+        @extend %width-full;
+        @extend %inline-block-margin-fix;
         input {
             background-color: transparent;
             border: none;

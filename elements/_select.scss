@@ -1,9 +1,7 @@
 select {
-    -webkit-appearance: none;
     padding: 5px;
     font-size: 20px;
     min-width: 50px;
-    outline: none;
     border: $default-border;
     @include border-radius(5px);
     &.width-full {

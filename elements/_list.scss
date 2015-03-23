@@ -26,7 +26,7 @@ dl {
         &.group {
             background: transparent;
             .group-name {
-                @extend .width-full;
+                @extend %width-full;
                 background-color: rgb(219, 219, 219);
                 color: $default-color;
                 padding: 6px 10px 7px;

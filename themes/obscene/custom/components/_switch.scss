@@ -9,48 +9,44 @@ input[type="checkbox"].switch {
         position: relative;
         box-shadow: inset 0 0 0px 1px #d5d5d5;
         text-indent: -5000px;
-        height: 26px;
-        width: 44px;
-        @include border-radius(13px);
+        height: 36px;
+        width: 64px;
+        @include border-radius(18px);
         background: #d5d5d5;
         &:before {
             content: "";
             position: absolute;
             display: block;
-            height: 26px;
-            width: 24px;
+            height: 36px;
+            width: 34px;
             top: 0;
             left: 0;
-            @include border-radius(13px);
+            @include border-radius(18px);
             background: rgba(100, 163, 99, 0);
-            -moz-transition: .25s ease-in-out;
-            -webkit-transition: .25s ease-in-out;
-            transition: .25s ease-in-out;
+            @include transition(.25s ease-in-out);
         }
         &:after {
             content: "";
             position: absolute;
             display: block;
-            height: 22px;
-            width: 22px;
+            height: 32px;
+            width: 32px;
             top: 2px;
             left: 2px;
-            @include border-radius(13px);
+            @include border-radius(16px);
             background: white;
-            -moz-transition: .25s ease-in-out;
-            -webkit-transition: .25s ease-in-out;
-            transition: .25s ease-in-out;
+            @include transition(.25s ease-in-out);
             box-shadow: 0px 1px 3px gray, 2px 3px 3px rgba(100, 100, 100, 0.15);
         }
     }
     &:checked {
         & + label {
             &:before {
-                width: 44px;
-                background: rgb(44, 157, 96);
+                width: 64px;
+                background: rgb(66, 183, 120);
             }
             &:after {
-                left: 20px;
+                left: 30px;
             }
         }
     }

@@ -33,7 +33,7 @@ table {
     }
     &.striped {
         tr:nth-child(odd) > td {
-            background-color: rgba(217, 217, 217, 0.56);
+            background-color: rgba(217, 217, 217, 0.4);
         }
     }
 }

@@ -1,0 +1,16 @@
+.detail-list {
+    li {
+        padding: 8px 5px;
+    }
+    .list-image-left {
+        display: inline-block;
+        vertical-align: top;
+        height: 36px;
+        float: left;
+        border: 1px solid gray;
+    }
+    .list-detail{
+        color: gray;
+        padding: 0;
+    }
+}

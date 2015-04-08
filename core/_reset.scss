@@ -1,0 +1,69 @@
+a,
+progress,
+select {
+    @include appearance(none);
+}
+
+select {
+    outline: none;
+}
+
+body {
+    @extend .fit;
+    height: auto;
+}
+
+button {
+    outline: none;
+}
+
+html {
+    @extend %absolute;
+    @extend .fit;
+}
+
+textarea {
+    &:focus {
+        outline: none;
+    }
+}
+
+input {
+    &:focus {
+        outline: none;
+    }
+    &[type="range"] {
+        @include appearance(none);
+        &::-moz-range-thumb {
+            @include appearance(none);
+        }
+        &::-ms-thumb {
+            @include appearance(none);
+        }
+        &::-moz-range-track {
+            @include appearance(none);
+            outline: none;
+        }
+        &::-ms-track {
+            @include appearance(none);
+            outline: none;
+        }
+        &::-webkit-slider-thumb {
+            @include appearance(none);
+        }
+        &::-webkit-slider-runnable-track {
+            @include appearance(none);
+        }
+    }
+}
+
+*,
+*:before,
+*:after {
+    -webkit-text-size-adjust: 100%;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-overflow-scrolling: touch;
+}

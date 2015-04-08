@@ -1,7 +1,7 @@
 .popup {
     @extend .center;
     @extend .fit;
-    @extend .top;
+    @extend %top;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     z-index: 100;

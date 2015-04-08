@@ -3,7 +3,9 @@
 
 @import "var";
 @import "helper";
-@import "elements";
+
+//includes the base elements
+@import "../../elements/elements";
 @import "custom/custom";
 
 @import "global";

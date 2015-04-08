@@ -1,5 +1,5 @@
 .toolbar {
-    @extend .width-100;
+    @extend %width-100;
     font-size: $default-font-size;
     padding: 6px;
     display: table;
@@ -17,7 +17,7 @@
     }
     &.scroll-horizontal {
         display: block;
-        @extend .scroll-horizontal;
+        @extend %scroll-horizontal;
         .area-left, .area-right {
             float: none;
         }
@@ -44,8 +44,8 @@
         padding: 7px 8px 7px 35px;
     }
     input[type="checkbox"]+label {
-        top: -3px;
-        margin: 0 3px;
+        top: -9px;
+        margin: 0 5px -8px 3px;
     }
     button {
         &.thick-border {

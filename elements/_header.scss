@@ -1,5 +1,5 @@
 header {
-    @extend .width-full;
+    @extend %width-full;
     @extend .center;
     text-transform: uppercase;
     padding: 12px 6px;

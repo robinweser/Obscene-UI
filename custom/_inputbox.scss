@@ -1,0 +1,17 @@
+.input-box {
+    @extend %width-full;
+    background-color: $border-color;
+    padding: $input-box-padding;
+    input {
+        @extend %width-100;
+    }
+    &.bordered {
+        @extend .border-width-full;
+    }
+    input[type="search"] {
+        @include border-radius(6px);
+        font-size: 11px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+}

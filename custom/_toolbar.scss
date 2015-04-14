@@ -5,8 +5,8 @@
     display: table;
     background-color: $nav-background-color;
     &.bordered {
-        border-top: $default-border;
-        border-bottom: $default-border;
+        border-top: $border;
+        border-bottom: $border;
     }
     .area-left {
         float: left;

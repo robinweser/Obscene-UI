@@ -6,7 +6,7 @@ q {
 blockquote {
     margin-left: 10px;
     padding-left: 5px;
-    border-left: $default-border;
+    border-left: $border;
     @extend q;
     .author {
         display: block;

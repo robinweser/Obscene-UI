@@ -7,19 +7,19 @@
 }
 
 .border-top {
-    border-top: $default-border;
+    border-top: $border;
 }
 
 .border-bottom {
-    border-bottom: $default-border;
+    border-bottom: $border;
 }
 
 .border-left {
-    border-left: $default-border;
+    border-left: $border;
 }
 
 .border-right {
-    border-right: $default-border;
+    border-right: $border;
 }
 
 .border-width-full {
@@ -27,11 +27,11 @@
 }
 
 .border-vertical {
-    border: $default-border;
+    border: $border;
     @extend .border-width-full;
 }
 
 .border-horizontal {
-    border: $default-border;
+    border: $border;
     border-width: 0 1px 0 1px;
 }

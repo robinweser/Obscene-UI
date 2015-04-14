@@ -65,3 +65,9 @@ $text-align: left, right, center, justify;
 %round {
     @include border-radius(50%);
 }
+
+%ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

@@ -1,7 +1,7 @@
 textarea {
     padding: 10px 8px;
     font-size: 14px;
-    border: $default-border;
+    border: $border;
     @include border-radius(5px);
     &:focus {
         outline: none;

@@ -5,10 +5,10 @@ dl {
     padding: 0;
     background: rgba(255, 255, 255, 0.95);
     &.bordered {
-        border-top: $default-border;
-        border-bottom: $default-border;
+        border-top: $border;
+        border-bottom: $border;
         li, dd {
-            border-bottom: $default-border;
+            border-bottom: $border;
             &:last-child {
                 border-bottom: none;
             }
@@ -31,7 +31,7 @@ dl {
                 color: $default-color;
                 padding: 6px 10px 7px;
                 font-weight: 700;
-                border-bottom: $default-border;
+                border-bottom: $border;
             }
         }
     }
@@ -48,13 +48,13 @@ ul {
             display: inline-block;
             vertical-align: top;
             &:last-child {
-                border-bottom: $default-border;
+                border-bottom: $border;
             }
         }
         &.bordered {
             border: none;
             li {
-                border-right: $default-border;
+                border-right: $border;
                 &:last-child {
                     border-right: none;
                 }

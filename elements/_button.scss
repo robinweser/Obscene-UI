@@ -1,24 +1,25 @@
 button {
     color: $button-color;
-    padding: 12px;
-    margin: 4px;
-    border: $default-border-width $default-border-style $button-border-color;
+    padding: $button-padding;
+    margin: $button-margin;
+    border: $border-width $border-style $button-border-color;
     background-color: $button-background-color;
+    display: inline-block;
     @include border-radius($button-border-radius);
     &.clear {
         background-color: transparent;
         padding: 0;
         border: 0;
-        padding: 0 4px;
+        padding: 0 $button-margin;
         color: $button-background-color;
     }
     &.small {
         font-size: $button-small-font-size;
-        padding: 8px;
+        padding: $button-small-padding;
     }
     &.large {
         font-size: $button-large-font-size;
-        padding: 12px;
+        padding: $button-padding;
     }
     &.confirm {
         background-color: $button-confirm-background-color;
@@ -50,14 +51,14 @@ button {
             color: $button-decline-background-color;
         }
         &.thick-border {
-            border-width: 2px;
+            border-width: $border-thick-width;
             &.width-full {
-                border-width: 2px 0 2px 0;
+                border-width: $border-thick-width 0;
             }
         }
         &.white {
-            border-color: white;
-            color: white;
+            border-color: #ffffff;
+            color: #ffffff;
         }
     }
 }

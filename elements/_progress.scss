@@ -12,7 +12,7 @@ progress {
     &::-webkit-progress-bar {
         background-color: #d3d3d3;
         @include border-radius(5px);
-        border: $default-border;
+        border: $border;
     }
     &::-webkit-progress-value {
         background-color: $button-confirm-background-color;

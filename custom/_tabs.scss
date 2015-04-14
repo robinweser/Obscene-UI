@@ -3,7 +3,7 @@
     .tab {
         padding: 12px 0;
         text-align: center;
-        border-bottom: $default-border;
+        border-bottom: $border;
         overflow: hidden;
         background: $nav-tab-top-background-color;
         &.active {
@@ -20,7 +20,7 @@
     left: 0;
     right: 0;
     z-index: 10;
-    border-top: $default-border;
+    border-top: $border;
     background-color: $nav-background-color;
     .tab {
         padding: 3px 0 1px;
@@ -34,11 +34,11 @@
             display: block;
             height: 0;
             margin: 0 auto;
-            border-right: $default-border;
+            border-right: $border;
             text-align: right;
             .notification-text {
                 color: white;
-                padding: 2px 6px;
+                padding: 0px 5px 1px 5px;
                 overflow: hidden;
                 margin: 0 2px;
                 position: relative;
@@ -74,7 +74,7 @@
 }
 
 .tabs-segmented {
-    border-bottom: $default-border;
+    border-bottom: $border;
     background-color: $nav-background-color;
     @extend .center;
     padding: 7px;
@@ -85,26 +85,28 @@
         text-align: center;
         overflow: hidden;
         background-color: transparent;
-        border: $default-border;
+        border: $border;
         border-width: 1px 0px 1px 0px;
+        border-color: $nav-tab-color;
+        color: $nav-tab-color;
         &.active {
-            background-color: $default-border-color;
+            background-color: $nav-tab-color;
             color: white;
         }
         &:first-child {
             @include border-radius(5px 0px 0px 5px);
-            border-left: $default-border;
+            border-left-width: 1px;
         }
         &:last-child {
             @include border-radius(0px 5px 5px 0px);
-            border-right: $default-border;
+            border-right-width: 1px;
         }
     }
     &.bordered {
         .tab {
-            border-right: $default-border;
+            border-right-width: 1px;
             &:last-child {
-                border-right: $default-border;
+                border-right-width: 1px;
             }
         }
     }
@@ -113,7 +115,7 @@
 .tabs-striped, .tabs-bottom {
     &.bordered {
         .tab {
-            border-right: $default-border-width $default-border-style $nav-tab-border-color;
+            border-right: $border-width $border-style $nav-tab-border-color;
             &:last-child {
                 border-right: none;
             }

@@ -2,7 +2,7 @@ select {
     padding: 5px;
     font-size: 20px;
     min-width: 50px;
-    border: $default-border;
+    border: $border;
     @include border-radius(5px);
     &.width-full {
         @extend input.width-full;

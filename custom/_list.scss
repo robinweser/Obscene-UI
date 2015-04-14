@@ -1,16 +1,20 @@
 .detail-list {
     li {
-        padding: 8px 5px;
+        padding: 10px;
+        font-size: 17px;
+        line-height: 20px;
     }
     .list-image-left {
         display: inline-block;
         vertical-align: top;
-        height: 36px;
+        height: 39px;
         float: left;
-        border: 1px solid gray;
+        margin-right: 7px;
+        @include border-radius(3px)
     }
     .list-detail{
         color: gray;
         padding: 0;
+        @extend %ellipsis;
     }
 }

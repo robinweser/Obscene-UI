@@ -25,7 +25,7 @@
         }
         input,
         label {
-            border-bottom: $default-border;
+            border-bottom: $border;
         }
     }
     &-stacked {
@@ -34,7 +34,7 @@
             width: 100%;
         }
         input {
-            border-bottom: $default-border;
+            border-bottom: $border;
         }
     }
 }

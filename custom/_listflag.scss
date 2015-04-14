@@ -1,0 +1,18 @@
+li {
+    &.flag, &.flag-blue, &.flag-red, &.flag-green {
+        border-left: $border;
+        border-left-width: $list-flag-border-width;
+    }
+    &.flag {
+        border-left-color: rgb(137, 137, 137);
+        &-blue {
+            border-left-color: rgb(103, 144, 180);
+        }
+        &-green {
+            border-left-color: rgb(99, 177, 159);
+        }
+        &-red {
+            border-left-color: rgb(211, 126, 126);
+        }
+    }
+}

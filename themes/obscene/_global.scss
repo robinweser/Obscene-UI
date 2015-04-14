@@ -10,3 +10,8 @@
     font-family: $default-font;
     @include box-sizing(border-box);
 }
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}

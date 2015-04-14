@@ -10,11 +10,11 @@
         height: 39px;
         float: left;
         margin-right: 7px;
-        @include border-radius(3px)
     }
     .list-detail{
         color: gray;
         padding: 0;
+        display: block;
         @extend %ellipsis;
     }
 }

@@ -1,9 +1,10 @@
 .input-box {
     @extend %width-full;
     background-color: $border-color;
+    @include box-sizing(border-box);
     padding: $input-box-padding;
     input {
-        @extend %width-100;
+        width: 100%;
     }
     &.bordered {
         @extend .border-width-full;

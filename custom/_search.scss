@@ -1,5 +1,5 @@
 input[type="search"] {
-    box-sizing: border-box;
+    @include box-sizing(border-box);
     font-size: 14px;
     padding-left: 35px;
     background-size: auto 50%;
@@ -10,7 +10,7 @@ input[type="search"] {
     &.slide-icon {
         text-align: center;
         padding-left: 70px;
-        background-position: 50% 48%;
+        background-position: 48% 48%;
         color: rgba(0, 0, 0, 0);
         &:focus {
             text-align: left;

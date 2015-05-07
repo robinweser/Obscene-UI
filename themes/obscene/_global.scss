@@ -1,7 +1,7 @@
 * {
     font-size: $default-font-size;
+    font-family: $default-font;
 }
-
 *,
 *:before,
 *:after {
@@ -10,8 +10,8 @@
     font-family: $default-font;
     @include box-sizing(border-box);
 }
-
-html, body {
+html,
+body {
     overflow-x: hidden;
     max-width: 100%;
 }

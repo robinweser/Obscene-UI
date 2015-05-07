@@ -4,14 +4,12 @@ $default-font: "Open Sans", "Lato", sans-serif;
 $default-font-size: 14px;
 $default-text-padding: 10px;
 $default-box-padding: 5px;
-
 /* Border */
 $border-color: rgb(191, 191, 191);
 $border-style: solid;
 $border-width: 1px;
 $border: $border-width $border-style $border-color;
 $border-thick-width: 2px;
-
 /* Button */
 $button-padding: 12px;
 $button-small-padding: 8px;
@@ -26,17 +24,12 @@ $button-rounded-border-radius: 50px;
 $button-squared-border-radius: 0;
 $button-small-font-size: 10px;
 $button-large-font-size: 20px;
-
 /* Table */
 $table-background-color: #f8f8f8;
-
 /* Header */
 $header-background-color: rgba(255, 255, 255, 0.85);
 $header-font-size: 15px;
-
-
 /* CUSTOM */
-
 /* Tabs */
 $nav-background-color: rgba(255, 255, 255, 0.95);
 $nav-tab-color: rgba(150, 150, 150, 1);
@@ -44,15 +37,12 @@ $nav-tab-border-color: rgba(177, 177, 177, 0.5);
 $nav-tab-top-background-color: rgba(204, 204, 204, 0);
 $nav-tab-font-size: 9px;
 $nav-tab-active-color: rgb(26, 26, 26);
-
 /* Notifications */
-$nav-notification-font-size: 11px;
+$nav-notification-font-size: 12px;
 $nav-notification-border-color: rgb(51, 75, 139);
-$nav-notification-background-color:  rgb(103, 144, 180);
-
+$nav-notification-background-color: rgb(103, 144, 180);
 /* Input box */
 $input-box-padding: 5px;
 $input-box-input-padding: 8px 6px;
-
 /* Flags */
 $list-flag-border-width: 12px;

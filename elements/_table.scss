@@ -1,7 +1,8 @@
 table {
     max-width: 100%;
     background: $table-background-color;
-    td, th {
+    td,
+    th {
         text-align: left;
         padding: 10px;
     }
@@ -15,14 +16,16 @@ table {
         display: table;
     }
     &.bordered {
-        td, th {
+        td,
+        th {
             border: $border;
         }
         tr {
             border: none;
         }
         &.width-full {
-            td:first-child, th:first-child {
+            td:first-child,
+            th:first-child {
                 border-left: none;
             }
             td:last-child,

@@ -1,5 +1,8 @@
 li {
-    &.flag, &.flag-blue, &.flag-red, &.flag-green {
+    &.flag,
+    &.flag-blue,
+    &.flag-red,
+    &.flag-green {
         border-left: $border;
         border-left-width: $list-flag-border-width;
     }

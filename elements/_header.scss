@@ -8,7 +8,9 @@ header {
     border-bottom: $border;
     color: $default-color;
     vertical-align: 2px;
-    button, input[type="submit"], a {
+    button,
+    input[type="submit"],
+    a {
         @extend button.clear;
         font-size: $header-font-size;
         margin: 0 3px;

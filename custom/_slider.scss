@@ -2,8 +2,8 @@ input[type="range"] {
     background: transparent;
     height: 25px;
     &::-webkit-slider-thumb {
-        box-shadow: 0px 1px 3px gray, 2px 3px 3px rgba(100, 100, 100, 0.15);
-        background: #108A93;
+        box-shadow: 0 1px 3px gray, 2px 3px 3px rgba(100, 100, 100, 0.15);
+        background: #108a93;
         border: none;
         height: 24px;
         width: 24px;
@@ -12,8 +12,8 @@ input[type="range"] {
         @include border-radius(15px);
     }
     &::-moz-range-thumb {
-        box-shadow: 0px 1px 3px gray, 2px 3px 3px rgba(100, 100, 100, 0.15);
-        background: #108A93;
+        box-shadow: 0 1px 3px gray, 2px 3px 3px rgba(100, 100, 100, 0.15);
+        background: #108a93;
         border: none;
         height: 24px;
         width: 24px;
@@ -22,8 +22,8 @@ input[type="range"] {
         @include border-radius(15px);
     }
     &::-ms-thumb {
-        box-shadow: 0px 1px 3px gray, 2px 3px 3px rgba(100, 100, 100, 0.15);
-        background: #108A93;
+        box-shadow: 0 1px 3px gray, 2px 3px 3px rgba(100, 100, 100, 0.15);
+        background: #108a93;
         border: none;
         height: 24px;
         width: 24px;

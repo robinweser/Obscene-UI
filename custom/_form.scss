@@ -1,5 +1,6 @@
 .form {
-    &-inline, &-stacked {
+    &-inline,
+    &-stacked {
         @extend %width-full;
         @extend %inline-block-margin-fix;
         input {
@@ -29,7 +30,8 @@
         }
     }
     &-stacked {
-        label, input {
+        label,
+        input {
             display: block;
             width: 100%;
         }

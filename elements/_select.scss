@@ -7,7 +7,8 @@ select {
     &.width-full {
         @extend input.width-full;
     }
-    option, optgroup {
+    option,
+    optgroup {
         font-size: 20px;
     }
 }

@@ -18,7 +18,8 @@
     &.scroll-horizontal {
         display: block;
         @extend %scroll-horizontal;
-        .area-left, .area-right {
+        .area-left,
+        .area-right {
             float: none;
         }
     }
@@ -36,7 +37,6 @@
         font-size: $header-font-size;
         margin: 0 3px;
     }
-
     input[type="range"] {
         padding-top: 14px;
     }
@@ -53,7 +53,7 @@
         }
     }
     .tabs-segmented {
-        padding: 3px 2px 2px 2px;
+        padding: 3px 2px 2px;
         background-color: transparent;
         border: none;
         vertical-align: top;

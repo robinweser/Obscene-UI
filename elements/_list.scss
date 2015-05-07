@@ -7,7 +7,8 @@ dl {
     &.bordered {
         border-top: $border;
         border-bottom: $border;
-        li, dd {
+        li,
+        dd {
             border-bottom: $border;
             &:last-child {
                 border-bottom: none;
@@ -34,7 +35,6 @@ dl {
         }
     }
 }
-
 ul {
     li {
         @extend .width-100;
@@ -60,17 +60,15 @@ ul {
         }
     }
 }
-
 ol {
     padding-left: 28px;
 }
-
 dl {
     dt {
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
     dd {
         padding-left: 30px;
-        padding-top: 0px;
+        padding-top: 0;
     }
 }

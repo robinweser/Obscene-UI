@@ -1,36 +1,28 @@
 .text-padding {
     padding: $default-text-padding;
 }
-
 .box-padding {
     padding: $default-box-padding;
 }
-
 .border-top {
     border-top: $border;
 }
-
 .border-bottom {
     border-bottom: $border;
 }
-
 .border-left {
     border-left: $border;
 }
-
 .border-right {
     border-right: $border;
 }
-
 .border-width-full {
     border-width: 1px 0 1px 0 !important;
 }
-
 .border-vertical {
     border: $border;
     @extend .border-width-full;
 }
-
 .border-horizontal {
     border: $border;
     border-width: 0 1px 0 1px;

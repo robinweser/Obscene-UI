@@ -1,9 +1,8 @@
 .page {
+    @extend %absolute;
     @extend .fit;
-    @extend %fixed;
     @extend %top;
 }
-
 .tab-view {
     .tab-view-tabs {
         width: 500%;

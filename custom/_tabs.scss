@@ -13,7 +13,6 @@
         }
     }
 }
-
 .tabs-bottom {
     @extend .bottom;
     @extend .fixed;
@@ -27,7 +26,7 @@
         overflow: hidden;
         color: $nav-tab-color;
         text-align: center;
-        font-size: 0px;
+        font-size: 0;
         .notification {
             width: auto;
             max-width: 60px;
@@ -38,7 +37,7 @@
             text-align: right;
             .notification-text {
                 color: white;
-                padding: 0px 5px 1px 5px;
+                padding: 1px 6px;
                 overflow: hidden;
                 margin: 0 2px;
                 position: relative;
@@ -59,6 +58,13 @@
             padding: 2px;
             margin-top: -2px;
         }
+        i {
+            font-size: 35px;
+            line-height: 35px;
+            width: auto;
+            padding: 2px;
+            margin-top: -2px;
+        }
         &.active {
             color: $nav-tab-active-color;
         }
@@ -72,7 +78,6 @@
         }
     }
 }
-
 .tabs-segmented {
     border-bottom: $border;
     background-color: $nav-background-color;
@@ -86,9 +91,28 @@
         overflow: hidden;
         background-color: transparent;
         border: $border;
-        border-width: 1px 0px 1px 0px;
+        border-width: 1px 0 1px 0;
         border-color: $nav-tab-color;
         color: $nav-tab-color;
+        .notification {
+            width: auto;
+            display: inline-block;
+            height: 0;
+            margin: 0 auto;
+            border-right: $border;
+            text-align: right;
+            .notification-text {
+                color: $nav-background-color;
+                padding: 1px 6px;
+                overflow: hidden;
+                margin: 0 1px;
+                position: relative;
+                z-index: 11;
+                background-color: $nav-tab-color;
+                font-size: $nav-notification-font-size;
+                @include border-radius(50px);
+            }
+        }
         &.active {
             background-color: $nav-tab-color;
             color: white;
@@ -111,8 +135,8 @@
         }
     }
 }
-
-.tabs-striped, .tabs-bottom {
+.tabs-striped,
+.tabs-bottom {
     &.bordered {
         .tab {
             border-right: $border-width $border-style $nav-tab-border-color;

@@ -1,28 +1,27 @@
 .center {
     text-align: center;
-    div, span {
+    div,
+    span {
         margin: 0 auto;
     }
 }
-
 .vbox,
 .hbox {
     @extend %inline-block-margin-fix;
 }
-
 .vbox {
-    div, span {
+    div,
+    span {
         clear: right;
     }
 }
-
 .hbox {
-    div, span {
+    div,
+    span {
         display: inline-block;
         vertical-align: top;
     }
 }
-
 .fit {
     min-width: 100%;
     min-height: 100%;

@@ -3,31 +3,25 @@ progress,
 select {
     @include appearance(none);
 }
-
 select {
     outline: none;
 }
-
 body {
     @extend .fit;
     height: auto;
 }
-
 button {
     outline: none;
 }
-
 html {
     @extend %absolute;
     @extend .fit;
 }
-
 textarea {
     &:focus {
         outline: none;
     }
 }
-
 input {
     &:focus {
         outline: none;
@@ -56,7 +50,6 @@ input {
         }
     }
 }
-
 *,
 *:before,
 *:after {

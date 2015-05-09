@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Obscene UI
 Obscene UI is a responsive, mobile-friendly UI-Template to build stable and beautiful app themes
 
@@ -44,7 +43,3 @@ Obscene UI is licensed under the MIT license. (http://opensource.org/licenses/MI
 ## Contributing
 If you've got something useful just create a pull request or let me know and I'll add it.
 Created by [Robin Frischmann](http://rofrischmann.de) at [Unverschämt](http://unverschaemt.net).
-=======
-# obscene.css
-obscene is a boilerplate stylesheet for mobile webapps especially for iOS
->>>>>>> develop/master

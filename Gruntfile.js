@@ -10,18 +10,27 @@ module.exports = function (grunt) {
                     'bin/core.min.css': 'core/core.scss'
                 }
             },
-            obscene: {
+            obsceneLight: {
                 options: {
                     style: "compressed"
                 },
                 files: {
-                    'bin/obscene.min.css': 'themes/obscene/obscene.scss'
+                    'bin/obscene-light.min.css': 'themes/obscene-light/theme.scss'
+                }
+            },
+            obsceneDark : {
+                options: {
+                    style: "compressed"
+                },
+                files: {
+                    'bin/obscene-dark.min.css': 'themes/obscene-dark/theme.scss'
                 }
             }
         }
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.registerTask('default', ['sass:obscene']);
-    grunt.registerTask('obscene', ['sass:obscene']);
+    grunt.registerTask('default', ['sass:obsceneLight']);
+    grunt.registerTask('obscene-light', ['sass:obsceneLight']);
+    grunt.registerTask('obscene-dark', ['sass:obsceneDark']);
     grunt.registerTask('core', ['sass:core']);
 };

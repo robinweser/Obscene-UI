@@ -42,5 +42,5 @@ If you need functionality such as tab switching and auto-sizing, please check [O
 Obscene UI is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
 ## Contributing
-If you've got something useful just create a pull request or let me know and I'll add it.
+If you've got something useful just create a pull request or let me know and I'll add it.    
 Created by [Robin Frischmann](http://rofrischmann.de) at [Unverschämt](http://unverschaemt.net).

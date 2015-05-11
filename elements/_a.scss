@@ -1,7 +1,0 @@
-a {
-    display: inline-block;
-    &.button {
-        @extend button;
-        text-decoration: none;
-    }
-}

@@ -13,9 +13,8 @@
         }
     }
 }
+
 .tabs-bottom {
-    @extend .bottom;
-    @extend .fixed;
     left: 0;
     right: 0;
     z-index: 10;
@@ -78,6 +77,7 @@
         }
     }
 }
+
 .tabs-segmented {
     border-bottom: $border;
     background-color: $nav-background-color;
@@ -135,6 +135,7 @@
         }
     }
 }
+
 .tabs-striped,
 .tabs-bottom {
     &.bordered {

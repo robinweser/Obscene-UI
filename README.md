@@ -1,5 +1,4 @@
 ![Obscene Logo](https://raw.githubusercontent.com/unverschaemt/Obscene-UI/gh-pages/res/obscene.png)    
------ 
 Obscene UI is a responsive, mobile-friendly UI-Template to build stable and beautiful app themes
 
 

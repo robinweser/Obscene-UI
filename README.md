@@ -1,6 +1,6 @@
 ![Obscene Logo](https://raw.githubusercontent.com/unverschaemt/Obscene-UI/gh-pages/res/obscene.png)    
 ----- 
-Obscene Theme is a responsive, mobile-friendly UI-Template to build stable and beautiful app themes
+Obscene UI is a responsive, mobile-friendly UI-Template to build stable and beautiful app themes
 
 
 ## Usage ##
@@ -38,11 +38,11 @@ If you need functionality such as tab switching and auto-sizing, please check [O
 - [ ] Documentation + **Documentation Generator (for custom themes)**
 - [ ] additional bunch of new custom elements
 
-- [ ] Full [React.js](https://facebook.github.io/react/) UI library with mobile-ready components based on Obscene Theme and Obscene.js
+- [ ] Full [React.js](https://facebook.github.io/react/) UI library with mobile-ready components based on Obscene UI and Obscene.js
 
 
 ## License
-Obscene Theme is licensed under the MIT license. (http://opensource.org/licenses/MIT)
+Obscene UI is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
 ## Contributing
 If you've got something useful just create a pull request or let me know and I'll add it.    

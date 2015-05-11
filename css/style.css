@@ -1,5 +1,6 @@
 #logo {
     position: fixed;
+    max-width: 1000px;
     bottom: 0;
 }
 

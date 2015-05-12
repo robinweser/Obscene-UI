@@ -1,0 +1,217 @@
+/*-------- COLOR SHEME ---------*/
+
+/*-------- DEFAULT ---------*/
+$default-color: rgb(60, 60, 60);
+$default-font: "Open Sans", "Lato", sans-serif;
+$default-font-size: 14px;
+$default-text-padding: 10px;
+$default-box-padding: 5px;
+$default-border-radius: 5px;
+
+/* Border */
+$border-color: rgb(191, 191, 191);
+$border-style: solid;
+$border-width: 1px;
+$border: $border-width $border-style $border-color;
+$border-thick-width: 2px;
+
+/*-------- BUTTON ---------*/
+$button-padding: 12px;
+$button-small-padding: 8px;
+$button-margin: 4px;
+$button-background-color: rgba(103, 144, 180, 0.95);
+$button-background-colors: (confirm: rgba(99, 177, 159, 0.95), decline: rgba(211, 126, 126, 0.95));
+$button-color: white;
+$button-border-width: $border-width;
+$button-border-style: $border-style;
+$button-border-radius: 8px;
+$button-border-color: rgba(52, 52, 52, 0.25);
+$button-rounded-border-radius: 50px;
+$button-squared-border-radius: 0;
+$button-small-font-size: 10px;
+$button-large-font-size: 20px;
+
+/*-------- TABLE ---------*/
+$table-background-color: #f8f8f8;
+$table-striped-background-color: rgba(217, 217, 217, 0.4);
+$table-cell-padding: 10px;
+
+/*-------- HEADER ---------*/
+$header-background-color: rgba(255, 255, 255, 0.85);
+$header-font-size: 15px;
+$header-padding: 12px 6px 11px;
+
+/*-------- TABS ---------*/
+/* Bottom */
+$tabs-bottom-background-color: rgba(255, 255, 255, 0.95);
+$tabs-bottom-border: $border;
+$tabs-bottom-tab-font-size: 9px;
+$tabs-bottom-tab-padding: 3px 0 1px;
+$tabs-bottom-tab-color: rgba(150, 150, 150, 1);
+$tabs-bottom-tab-border-color: rgba(177, 177, 177, 0.5);
+$tabs-bottom-tab-active-color: rgb(26, 26, 26);
+
+$tabs-bottom-tab-icon-size: 35px;
+$tabs-bottom-tab-icon-padding: 2px;
+$tabs-bottom-tab-icon-only-padding: 6px 0 2px;
+
+$tabs-bottom-notification-max-width: 60px;
+$tabs-bottom-notification-align: right;
+$tabs-bottom-notification-padding: 1px 6px;
+$tabs-bottom-notification-color: white;
+$tabs-bottom-notification-border-radius: 50px;
+$tabs-bottom-notification-font-size: 12px;
+$tabs-bottom-notification-background-color: rgb(103, 144, 180);
+
+/* Striped */
+$tabs-striped-background-color: rgba(204, 204, 204, 0);
+$tabs-striped-tab-padding: 12px;
+$tabs-striped-tab-border-width: $border-width;
+$tabs-striped-tab-border-color: rgba(177, 177, 177, 0.5);
+$tabs-striped-tab-border-bottom: $tabs-striped-tab-border-width solid $tabs-striped-tab-border-color;
+$tabs-striped-tab-font-size: 9px;
+$tabs-striped-tab-color: rgba(150, 150, 150, 1);
+$tabs-striped-tab-background-color: $tabs-striped-background-color;
+$tabs-striped-tab-active-background-color: $tabs-striped-tab-background-color;
+$tabs-striped-tab-active-color: map-get($button-background-colors, confirm);
+$tabs-striped-tab-active-border-width: 4px;
+$tabs-striped-tab-active-border-color: $tabs-striped-tab-active-color;
+$tabs-striped-tab-active-border-bottom: $tabs-striped-tab-active-border-width solid $tabs-striped-tab-active-border-color;
+
+/* Segmented */
+$tabs-segmented-background-color: rgba(204, 204, 204, 0);
+$tabs-segmented-border-bottom: $border;
+$tabs-segmented-padding: 7px;
+$tabs-segmented-tab-font-size: 13px;
+$tabs-segmented-tab-padding: 6px 8px;
+$tabs-segmented-tab-min-width: 50px;
+$tabs-segmented-tab-color: rgba(150, 150, 150, 1);
+$tabs-segmented-tab-border-width: 1px;
+$tabs-segmented-tab-border-color: $tabs-segmented-tab-color;
+$tabs-segmented-tab-border-radius: $default-border-radius;
+$tabs-segmented-tab-background-color: $tabs-segmented-background-color;
+$tabs-segmented-tab-background-width: 1px;
+$tabs-segmented-tab-active-color: rgb(26, 26, 26);
+$tabs-segmented-tab-active-background-color: $tabs-segmented-tab-color;
+
+$tabs-segmented-notification-padding: 1px 6px;
+$tabs-segmented-notification-color: $tabs-segmented-tab-background-color;
+$tabs-segmented-notification-border-radius: 50px;
+$tabs-segmented-notification-font-size: 12px;
+$tabs-segmented-notification-background-color: $tabs-segmented-tab-color;
+$tabs-segmented-notification-active-color: $tabs-segmented-tab-active-background-color;
+$tabs-segmented-notification-active-background-color: $tabs-segmented-tab-active-color;
+
+/*-------- TAB VIEW -------*/
+$tab-view-tabs-default-tab-count: 5;
+
+/*-------- INPUT -------*/
+/* Form */
+$form-inline-input-width: 70%;
+$form-inline-label-width: 30%;
+$form-input-padding: $default-text-padding;
+$form-inline-border-bottom: $border;
+$form-stacked-border-bottom: $border;
+$form-label-color: inherit;
+$form-input-color: inherit;
+
+/* Input box */
+$input-box-background-color: $border-color;
+$input-box-padding: 5px;
+$input-box-input-padding: 8px 6px;
+$input-box-input-border-radius: 6px;
+$input-box-input-font-size: 14px;
+
+/* Input */
+$input-padding: 10px 8px;
+$input-font-size: $default-font-size;
+$input-border: $border;
+$input-border-radius: $default-border-radius;
+$input-checkbox-label-margin: 4px;
+
+/* Select */
+$select-padding: 5px;
+$select-font-size: 20px;
+$select-border-radius: $default-border-radius;
+$select-min-width: 50px;
+$select-option-font-size: $select-font-size;
+
+/* Textarea */
+$textarea-padding: $input-padding;
+$textarea-font-size: $default-font-size;
+$textarea-border-radius: $default-border-radius;
+$textarea-border-width: 1px;
+$textarea-border: $input-border;
+
+/*------ LIST -------*/
+$list-background-color: rgba(255, 255, 255, 0.95);
+$list-item-padding: 12px 10px;
+$list-item-selected-background-color: rgb(255, 255, 255);
+$list-ordered-padding-left: 28px;
+$list-definition-padding-left: $list-ordered-padding-left;
+
+$list-group-background-color: rgb(219, 219, 219);
+$list-group-color: $default-color;
+$list-group-padding: 6px 10px 7px;
+$list-group-font-weight: 700;
+$list-group-border: $border;
+
+$detail-list-font-size: 17px;
+$detail-list-padding: 10px;
+$detail-list-line-height: $detail-list-font-size + 3;
+$detail-list-detail-color: gray;
+$detail-list-detail-padding: 0;
+$detail-list-image-height: 2 * $detail-list-padding + $detail-list-line-height + $detail-list-detail-padding;
+$detail-list-image-margin: 7px;
+
+/*----- FLAGS ------*/
+$list-flag-border-width: 12px;
+$list-flag-colors: (blue: rgb(103, 144, 180), red: rgb(211, 126, 126), green: rgb(99, 177, 159));
+
+/*----- MAPPING -------*/
+$key-value-label-value-font-size: 16px;
+$key-value-label-value-line-height: $key-value-label-value-font-size;
+$key-value-label-value-align: center;
+$key-value-label-label-font-size: 12px;
+$key-value-label-label-color: $detail-list-detail-color;
+
+/*------ POPUP ------*/
+$popup-background-color: rgba(0, 0, 0, 0.5);
+$popup-padding: 10px;
+$popup-message-padding: 20px;
+$popup-message-border: $border;
+$popup-message-background-color: white;
+$popup-message-border-radius: 30px;
+
+/*------ TOOLBAR ------*/
+$toolbar-background-color: $tabs-segmented-background-color;
+$toolbar-padding: 6px;
+$toolbar-font-size: $default-font-size;
+$toolbar-input-padding: $toolbar-font-size - $toolbar-padding;
+
+/*------ CODE -------*/
+$code-background-color: #fafafa;
+$code-padding: 2px 4px;
+$code-border-radius: 4px;
+
+/*------ HR --------*/
+$hr-margin: 4px;
+$hr-color: $border-color;
+
+/*------- PROGRESS -------*/
+$progress-height: 30px;
+$progress-value-background-color: map-get($button-background-colors, confirm);
+$progress-background-color: #d3d3d3;
+$progress-border-radius: $default-border-radius;
+$progress-border-width: 1px;
+
+/*------ QUOTE ------*/
+$quote-color: #cecece;
+$blockquote-margin-left: 10px;
+$blockquote-padding-left: 5px;
+$blockquote-border-left: $border;
+
+/*------ MISC -------*/
+$mobile-tap-highlight-color: rgba(0, 0, 0, 0);
+$translucent-background-blur: 10px;
+$translucent-background-saturate: 1;

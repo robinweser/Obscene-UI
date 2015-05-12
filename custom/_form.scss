@@ -7,26 +7,28 @@
             background-color: transparent;
             border: none;
             margin: 0;
+            color: $form-input-color;
             @include border-radius(0);
         }
         label {
             display: inline-block;
+            color: $form-label-color;
         }
         input,
         label {
-            padding: $default-text-padding;
+            padding: $form-input-padding;
         }
     }
     &-inline {
         input {
-            width: 70%;
+            width: $form-inline-input-width;
         }
         label {
-            width: 30%;
+            width: $form-inline-label-width;
         }
         input,
         label {
-            border-bottom: $border;
+            border-bottom: $form-inline-border-bottom;
         }
     }
     &-stacked {
@@ -36,7 +38,7 @@
             width: 100%;
         }
         input {
-            border-bottom: $border;
+            border-bottom: $form-stacked-border-bottom;
         }
     }
 }

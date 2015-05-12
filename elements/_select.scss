@@ -1,14 +1,14 @@
 select {
-    padding: 5px;
-    font-size: 20px;
-    min-width: 50px;
+    padding:  $select-padding;
+    font-size: $select-font-size;
+    min-width: $select-min-width;
     border: $border;
-    @include border-radius(5px);
+    @include border-radius($select-border-radius);
     &.width-full {
         @extend input.width-full;
     }
     option,
     optgroup {
-        font-size: 20px;
+        font-size: $select-option-font-size;
     }
 }

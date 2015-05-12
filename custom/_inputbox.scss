@@ -1,6 +1,6 @@
 .input-box {
     @extend %width-full;
-    background-color: $border-color;
+    background-color: $input-box-background-color;
     @include box-sizing(border-box);
     padding: $input-box-padding;
     input {
@@ -10,9 +10,8 @@
         @extend .border-width-full;
     }
     input[type="search"] {
-        @include border-radius(6px);
-        font-size: 11px;
-        padding-top: 6px;
-        padding-bottom: 6px;
+        @include border-radius($input-box-input-border-radius);
+        font-size: $input-box-input-font-size;
+        padding: $input-box-input-padding;
     }
 }

@@ -1,9 +1,9 @@
 code {
-    background-color: #fafafa;
-    padding: 2px 4px;
+    background-color: $code-background-color;
+    padding: $code-padding;
     display: inline-block;
     border: $border;
-    @include border-radius(4px);
+    @include border-radius($code-border-radius);
 }
 pre {
     code {

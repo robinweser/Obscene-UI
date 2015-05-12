@@ -1,11 +1,12 @@
 q {
-    color: #cecece;
+    color: $quote-color;
     quotes: inherit;
 }
+
 blockquote {
-    margin-left: 10px;
-    padding-left: 5px;
-    border-left: $border;
+    margin-left: $blockquote-margin-left;
+    padding-left: $blockquote-padding-left;
+    border-left: $blockquote-border-left;
     @extend q;
     .author {
         display: block;

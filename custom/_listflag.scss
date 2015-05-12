@@ -1,21 +1,14 @@
-li {
-    &.flag,
-    &.flag-blue,
-    &.flag-red,
-    &.flag-green {
-        border-left: $border;
-        border-left-width: $list-flag-border-width;
+@mixin flag($name, $width, $style, $color) {
+    &.flag-#{$name} {
+        border-left: $width $style $color;
     }
+}
+
+li {
     &.flag {
-        border-left-color: rgb(137, 137, 137);
-        &-blue {
-            border-left-color: rgb(103, 144, 180);
-        }
-        &-green {
-            border-left-color: rgb(99, 177, 159);
-        }
-        &-red {
-            border-left-color: rgb(211, 126, 126);
-        }
+        border-left: $border;
+    }
+    @each $key, $value in $list-flag-colors {
+        @include flag(key, $list-flag-border-width, solid, value);
     }
 }

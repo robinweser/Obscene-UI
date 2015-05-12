@@ -1,13 +1,13 @@
 textarea {
-    padding: 10px 8px;
-    font-size: 14px;
-    border: $border;
-    @include border-radius(5px);
+    padding: $textarea-padding;
+    font-size: $textarea-font-size;
+    border: $textarea-border;
+    @include border-radius($textarea-border-radius);
     &:focus {
         outline: none;
     }
     &.width-full {
-        border-width: 1px 0 1px 0;
-        @include border-radius(0px);
+        border-width: $textarea-border-width 0 $textarea-border-width 0;
+        @include border-radius(0);
     }
 }

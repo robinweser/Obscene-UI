@@ -1,7 +1,7 @@
 input[type="search"] {
     @include box-sizing(border-box);
     font-size: 14px;
-    padding-left: 35px;
+    padding-left: 30px;
     background-size: auto 48%;
     background-position: 8px center;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@ input[type="search"] {
             text-align: left;
             background-position: 8px center;
             color: $default-color;
-            padding-left: 35px;
+            padding-left: 30px;
             padding-right: 10px;
         }
     }

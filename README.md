@@ -34,9 +34,9 @@ If you need functionality such as tab switching and auto-sizing, please check [O
 - [ ] Dark Theme
 - [ ] iOS Theme
 - [ ] Material Design Theme
-- [ ] Documentation + **Documentation Generator (for custom themes)**
+- [ ] Documentation + Documentation Generator (for custom themes)
 - [ ] additional bunch of new custom elements
-
+- [ ] mixins which help generating styles faster
 - [ ] Full [React.js](https://facebook.github.io/react/) UI library with mobile-ready components based on Obscene UI and Obscene.js
 
 

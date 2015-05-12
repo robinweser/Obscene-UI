@@ -1,19 +1,12 @@
 .toolbar {
     @extend %width-100;
     font-size: $default-font-size;
-    padding: 6px;
+    padding: $toolbar-padding;
     display: table;
-    background-color: $nav-background-color;
+    background-color: $toolbar-background-color;
     &.bordered {
         border-top: $border;
         border-bottom: $border;
-    }
-    .area-left {
-        float: left;
-    }
-    .area-right {
-        float: right;
-        clear: right;
     }
     &.scroll-horizontal {
         display: block;
@@ -23,17 +16,13 @@
             float: none;
         }
     }
-    .area-left,
-    .area-right {
-        @extend .hbox;
-    }
     button,
     input[type="submit"],
     input[type="text"],
     input[type="search"],
     input[type="number"],
     a {
-        padding: 8px;
+        padding: $toolbar-input-padding;
         font-size: $header-font-size;
         margin: 0 3px;
     }
@@ -41,9 +30,9 @@
         padding-top: 14px;
     }
     input[type="search"] {
-        padding: 7px 8px 7px 35px;
+        padding: 7px 8px 7px 30px;
     }
-    input[type="checkbox"]+label {
+    input[type="checkbox"] + label {
         top: -9px;
         margin: 0 5px -8px 3px;
     }

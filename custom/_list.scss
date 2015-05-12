@@ -1,19 +1,25 @@
 .detail-list {
     li {
-        padding: 10px;
-        font-size: 17px;
-        line-height: 20px;
+        padding: $detail-list-padding;
+        font-size: $detail-list-font-size;
+        line-height: $detail-list-line-height;
     }
-    .list-image-left {
+    .list-image-left, .list-image-right {
         display: inline-block;
         vertical-align: top;
-        height: 39px;
+        height: $detail-list-image-height;
         float: left;
-        margin-right: 7px;
+        margin-left: 0;
+        margin-right: $detail-list-image-margin;
+    }
+    .list-image-right {
+        float: right;
+        margin-right: 0;
+        margin-left: $detail-list-image-margin;
     }
     .list-detail {
-        color: gray;
-        padding: 0;
+        color: $detail-list-detail-color;
+        padding: $detail-list-detail-padding;
         display: block;
         @extend %ellipsis;
     }

@@ -15,6 +15,6 @@
         background-size: inherit;
         background-repeat: inherit;
         background-attachment: inherit;
-        -webkit-filter: blur(10px) saturate(1);
+        -webkit-filter: blur($translucent-background-blur) saturate($translucent-background-saturate);
     }
 }

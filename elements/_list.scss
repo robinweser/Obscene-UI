@@ -3,7 +3,7 @@ ol,
 dl {
     margin: 0;
     padding: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: $list-background-color;
     &.bordered {
         border-top: $border;
         border-bottom: $border;
@@ -18,20 +18,20 @@ dl {
     li,
     dt,
     dd {
-        padding: 12px 10px;
+        padding: $list-item-padding;
         &.selected {
-            background-color: rgb(255, 255, 255);
+            background-color: $list-item-selected-background-color;
         }
     }
     &.group {
         background: transparent;
         .group-name {
             @extend %width-full;
-            background-color: rgb(219, 219, 219);
-            color: $default-color;
-            padding: 6px 10px 7px;
-            font-weight: 700;
-            border-bottom: $border;
+            background-color: $list-group-background-color;
+            color: $list-group-color;
+            padding: $list-group-padding;
+            font-weight: $list-group-font-weight;
+            border-bottom: $list-group-border;
         }
     }
 }
@@ -61,14 +61,14 @@ ul {
     }
 }
 ol {
-    padding-left: 28px;
+    padding-left: $list-ordered-padding-left;
 }
 dl {
     dt {
         padding-bottom: 0;
     }
     dd {
-        padding-left: 30px;
+        padding-left: $list-definition-padding-left;
         padding-top: 0;
     }
 }

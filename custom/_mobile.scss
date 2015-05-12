@@ -1,0 +1,10 @@
+*,
+*:before,
+*:after {
+    @include text-size-adjust(100%);
+    @include touch-callout(none);
+    @include text-size-adjust(none);
+    @include tap-highlight-color($mobile-tap-highlight-color);
+    @include overflow-scrolling(touch);
+    @include appearance(none);
+}

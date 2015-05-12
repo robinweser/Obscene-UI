@@ -3,25 +3,31 @@ progress,
 select {
     @include appearance(none);
 }
+
 select {
     outline: none;
 }
+
 body {
     @extend .fit;
     height: auto;
 }
+
 button {
     outline: none;
 }
+
 html {
     @extend %absolute;
     @extend .fit;
 }
+
 textarea {
     &:focus {
         outline: none;
     }
 }
+
 input {
     &:focus {
         outline: none;
@@ -49,14 +55,4 @@ input {
             @include appearance(none);
         }
     }
-}
-*,
-*:before,
-*:after {
-    -webkit-text-size-adjust: 100%;
-    -webkit-touch-callout: none;
-    -webkit-text-size-adjust: none;
-    position: relative;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-overflow-scrolling: touch;
 }

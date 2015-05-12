@@ -1,15 +1,36 @@
-.tabs-striped {
-    background-color: $nav-background-color;
-    .tab {
-        padding: 12px 0;
-        text-align: center;
-        border-bottom: $border;
+.notification {
+    width: auto;
+    max-width: $tabs-bottom-notification-max-width;
+    display: block;
+    height: 0;
+    margin: 0 auto;
+    text-align: $tabs-bottom-notification-align;
+    .notification-text {
+        color: $tabs-bottom-notification-color;
+        padding: $tabs-bottom-notification-padding;
         overflow: hidden;
-        background: $nav-tab-top-background-color;
+        margin: 0 2px;
+        position: relative;
+        z-index: 11;
+        background-color: $tabs-bottom-notification-background-color;
+        font-size: $tabs-bottom-notification-font-size;
+        @include border-radius($tabs-bottom-notification-border-radius);
+    }
+}
+
+.tabs-striped {
+    background-color: $tabs-striped-background-color;
+    .tab {
+        padding: $tabs-striped-tab-padding 0;
+        text-align: center;
+        border-bottom: $tabs-striped-tab-border-bottom;
+        overflow: hidden;
+        background: $tabs-striped-tab-background-color;
         &.active {
-            color: $button-confirm-background-color;
-            padding-bottom: 9px;
-            border-bottom: 4px solid $button-confirm-background-color;
+            color: $tabs-striped-tab-active-color;
+            padding-bottom: $tabs-striped-tab-padding - $tabs-striped-tab-active-border-width + 1;
+            border-bottom: $tabs-striped-tab-active-border-bottom;
+            background: $tabs-striped-tab-active-background-color;
         }
     }
 }
@@ -18,119 +39,98 @@
     left: 0;
     right: 0;
     z-index: 10;
-    border-top: $border;
-    background-color: $nav-background-color;
+    border-top: $tabs-bottom-border;
+    background-color: $tabs-bottom-background-color;
     .tab {
-        padding: 3px 0 1px;
+        padding: $tabs-bottom-tab-padding;
         overflow: hidden;
-        color: $nav-tab-color;
+        color: $tabs-bottom-tab-color;
         text-align: center;
         font-size: 0;
         .notification {
-            width: auto;
-            max-width: 60px;
-            display: block;
-            height: 0;
-            margin: 0 auto;
-            border-right: $border;
-            text-align: right;
-            .notification-text {
-                color: white;
-                padding: 1px 6px;
-                overflow: hidden;
-                margin: 0 2px;
-                position: relative;
-                z-index: 11;
-                background-color: $nav-notification-background-color;
-                font-size: $nav-notification-font-size;
-                @include border-radius(50px);
-            }
+            @extend .notification;
         }
         .tab-name {
             display: block;
-            font-size: $nav-tab-font-size;
+            font-size: $tabs-bottom-tab-font-size;
         }
-        img {
+        img.tab-icon {
             @include opacity(0.4);
-            height: 35px;
-            width: auto;
-            padding: 2px;
-            margin-top: -2px;
         }
-        i {
-            font-size: 35px;
-            line-height: 35px;
+        .tab-icon {
+            height: $tabs-bottom-tab-icon-size;
+            font-size: $tabs-bottom-tab-icon-size;
+            line-height: $tabs-bottom-tab-icon-size;
             width: auto;
-            padding: 2px;
-            margin-top: -2px;
+            padding: $tabs-bottom-tab-icon-padding;
+            margin-top: -1 * $tabs-bottom-tab-icon-padding;
         }
         &.active {
-            color: $nav-tab-active-color;
+            color: $tabs-bottom-tab-active-color;
         }
-        &.active img {
+        &.active img.tab-icon {
             @include opacity(1);
         }
     }
     &.icon-only {
         .tab {
-            padding: 6px 0 2px;
+            padding: $tabs-bottom-tab-icon-only-padding;
         }
     }
 }
 
 .tabs-segmented {
-    border-bottom: $border;
-    background-color: $nav-background-color;
+    border-bottom: $tabs-segmented-border-bottom;
+    background-color: $tabs-segmented-background-color;
     @extend .center;
-    padding: 7px;
+    padding: $tabs-segmented-padding;
     .tab {
-        font-size: 13px;
-        padding: 6px 8px;
-        min-width: 50px;
+        font-size: $tabs-segmented-tab-font-size;
+        padding: $tabs-segmented-tab-padding;
+        min-width: $tabs-segmented-tab-min-width;
         text-align: center;
         overflow: hidden;
         background-color: transparent;
         border: $border;
-        border-width: 1px 0 1px 0;
-        border-color: $nav-tab-color;
-        color: $nav-tab-color;
+        border-width: $tabs-segmented-tab-border-width 0 $tabs-segmented-tab-border-width 0;
+        border-color: $tabs-segmented-tab-border-color;
+        color: $tabs-segmented-tab-color;
         .notification {
-            width: auto;
+            @extend .notification;
+            max-width: none;
             display: inline-block;
-            height: 0;
-            margin: 0 auto;
-            border-right: $border;
             text-align: right;
             .notification-text {
-                color: $nav-background-color;
-                padding: 1px 6px;
-                overflow: hidden;
-                margin: 0 1px;
-                position: relative;
-                z-index: 11;
-                background-color: $nav-tab-color;
-                font-size: $nav-notification-font-size;
-                @include border-radius(50px);
+                color: $tabs-segmented-notification-color;
+                padding: $tabs-segmented-notification-padding;
+                margin: 0 2px;
+                background-color: $tabs-segmented-notification-background-color;
+                font-size: $tabs-segmented-notification-font-size;
+                @include border-radius($tabs-segmented-notification-border-radius);
             }
         }
         &.active {
-            background-color: $nav-tab-color;
-            color: white;
+            background-color: $tabs-segmented-tab-active-background-color;
+            color: $tabs-segmented-tab-active-color;
+            .notification-text {
+                color: $tabs-segmented-notification-active-color;
+                background-color: $tabs-segmented-notification-active-background-color;
+            }
         }
         &:first-child {
-            @include border-radius(5px 0px 0px 5px);
-            border-left-width: 1px;
+            @include border-radius($tabs-segmented-tab-border-radius 0px 0px $tabs-segmented-tab-border-radius);
+            border-left-width: $tabs-segmented-tab-border-width;
         }
         &:last-child {
-            @include border-radius(0px 5px 5px 0px);
-            border-right-width: 1px;
+            @include border-radius(0px $tabs-segmented-tab-border-radius $tabs-segmented-tab-border-radius 0px);
+            border-right-width: $tabs-segmented-tab-border-width;
         }
     }
     &.bordered {
         .tab {
-            border-right-width: 1px;
+            border-right-width: $tabs-segmented-tab-border-width;
             &:last-child {
-                border-right-width: 1px;
+                border-right-width: $tabs-segmented-tab-border-width;
             }
         }
     }
@@ -140,7 +140,7 @@
 .tabs-bottom {
     &.bordered {
         .tab {
-            border-right: $border-width $border-style $nav-tab-border-color;
+            border-right: $border;
             &:last-child {
                 border-right: none;
             }

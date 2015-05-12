@@ -2,23 +2,21 @@
     @extend .center;
     @extend .fit;
     @extend %top;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    background-color: $popup-background-color;
+    padding: $popup-padding;
     z-index: 100;
     position: fixed;
     .message {
-        top: 10%;
-        padding: 20px;
-        border: $border;
-        background: white;
+        padding: $popup-message-padding;
+        border: $popup-message-border;
+        background-color: $popup-message-background-color;
         display: inline-block;
-        min-height: 200px;
-        min-width: 300px;
+        @extend %width-100;
         &.rounded {
-            @include border-radius(30px);
+            @include border-radius($popup-message-border-radius);
         }
         &.circle {
-            @include border-radius(50%);
+            @extend %round;
         }
         &.fullscreen {
             position: fixed;

@@ -1,21 +1,21 @@
 progress {
-    height: 30px;
+    height: $progress-height;
     &.width-full {
         &::-webkit-progress-bar {
             @include border-radius(0);
-            border-width: 1px 0 1px 0;
+            border-width: $progress-border-width 0 $progress-border-width 0;
         }
         &::-webkit-progress-value {
             @include border-radius(0);
         }
     }
     &::-webkit-progress-bar {
-        background-color: #d3d3d3;
-        @include border-radius(5px);
+        background-color: $progress-background-color;
+        @include border-radius($progress-border-radius);
         border: $border;
     }
     &::-webkit-progress-value {
-        background-color: $button-confirm-background-color;
-        @include border-radius(5px 0 0 5px);
+        background-color: $progress-value-background-color;
+        @include border-radius($progress-border-width 0 0 $progress-border-width);
     }
 }

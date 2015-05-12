@@ -4,7 +4,7 @@ table {
     td,
     th {
         text-align: left;
-        padding: 10px;
+        padding: $table-cell-padding;
     }
     tr {
         border-bottom: $border;
@@ -36,7 +36,7 @@ table {
     }
     &.striped {
         tr:nth-child(odd) > td {
-            background-color: rgba(217, 217, 217, 0.4);
+            background-color: $table-striped-background-color;
         }
     }
 }

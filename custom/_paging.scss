@@ -3,20 +3,3 @@
     @extend .fit;
     @extend %top;
 }
-.tab-view {
-    .tab-view-tabs {
-        width: 500%;
-        float: left;
-        position: relative;
-        overflow: hidden;
-        @extend %inline-block-margin-fix;
-        .tab-view-view {
-            width: 20%;
-            vertical-align: top;
-            position: relative;
-            display: inline-block;
-            overflow-y: auto;
-            overflow-x: hidden;
-        }
-    }
-}

@@ -64,7 +64,7 @@ $tabs-bottom-notification-font-size: 12px;
 $tabs-bottom-notification-background-color: rgb(103, 144, 180);
 
 /* Striped */
-$tabs-striped-background-color: rgba(204, 204, 204, 0);
+$tabs-striped-background-color:  rgba(255, 255, 255, 0.85);
 $tabs-striped-tab-padding: 12px;
 $tabs-striped-tab-border-width: $border-width;
 $tabs-striped-tab-border-color: rgba(177, 177, 177, 0.5);
@@ -79,7 +79,7 @@ $tabs-striped-tab-active-border-color: $tabs-striped-tab-active-color;
 $tabs-striped-tab-active-border-bottom: $tabs-striped-tab-active-border-width solid $tabs-striped-tab-active-border-color;
 
 /* Segmented */
-$tabs-segmented-background-color: rgba(204, 204, 204, 0);
+$tabs-segmented-background-color:  rgba(255, 255, 255, 0.85);
 $tabs-segmented-border-bottom: $border;
 $tabs-segmented-padding: 7px;
 $tabs-segmented-tab-font-size: 13px;
@@ -91,7 +91,7 @@ $tabs-segmented-tab-border-color: $tabs-segmented-tab-color;
 $tabs-segmented-tab-border-radius: $default-border-radius;
 $tabs-segmented-tab-background-color: $tabs-segmented-background-color;
 $tabs-segmented-tab-background-width: 1px;
-$tabs-segmented-tab-active-color: rgb(26, 26, 26);
+$tabs-segmented-tab-active-color: $tabs-segmented-background-color;
 $tabs-segmented-tab-active-background-color: $tabs-segmented-tab-color;
 
 $tabs-segmented-notification-padding: 1px 6px;
@@ -128,6 +128,7 @@ $input-font-size: $default-font-size;
 $input-border: $border;
 $input-border-radius: $default-border-radius;
 $input-checkbox-label-margin: 4px;
+$input-search-padding-left: 30px;
 
 /* Select */
 $select-padding: 5px;

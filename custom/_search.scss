@@ -1,7 +1,7 @@
 input[type="search"] {
     @include box-sizing(border-box);
     font-size: 14px;
-    padding-left: 30px;
+    padding-left: $input-search-padding-left;;
     background-size: auto 48%;
     background-position: 8px center;
     background-repeat: no-repeat;
@@ -9,14 +9,14 @@ input[type="search"] {
     @include transition(all 150ms linear);
     &.slide-icon {
         text-align: center;
-        padding-left: 65px;
+        padding-left: $input-search-padding-left * 2;
         background-position: 50%;
         color: rgba(0, 0, 0, 0);
         &:focus {
             text-align: left;
             background-position: 8px center;
             color: $default-color;
-            padding-left: 30px;
+            padding-left: $input-search-padding-left;;
             padding-right: 10px;
         }
     }

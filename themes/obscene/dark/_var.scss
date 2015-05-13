@@ -1,7 +1,7 @@
 /*-------- COLOR SHEME ---------*/
 
 /*-------- DEFAULT ---------*/
-$default-color: rgb(60, 60, 60);
+$default-color: rgb(203, 203, 203);
 $default-font: "Open Sans", "Lato", sans-serif;
 $default-font-size: 14px;
 $default-text-padding: 10px;
@@ -9,7 +9,7 @@ $default-box-padding: 5px;
 $default-border-radius: 5px;
 
 /* Border */
-$border-color: rgb(191, 191, 191);
+$border-color: rgb(92, 92, 92);
 $border-style: solid;
 $border-width: 1px;
 $border: $border-width $border-style $border-color;
@@ -32,24 +32,24 @@ $button-small-font-size: 10px;
 $button-large-font-size: 20px;
 
 /*-------- TABLE ---------*/
-$table-background-color: #f8f8f8;
-$table-striped-background-color: rgba(217, 217, 217, 0.4);
+$table-background-color: #3b3b3b;
+$table-striped-background-color: rgba(42, 42, 42, 0.4);
 $table-cell-padding: 10px;
 
 /*-------- HEADER ---------*/
-$header-background-color: rgba(255, 255, 255, 0.85);
+$header-background-color: rgba(46, 46, 46, 0.85);
 $header-font-size: 15px;
 $header-padding: 12px 6px 11px;
 
 /*-------- TABS ---------*/
 /* Bottom */
-$tabs-bottom-background-color: rgba(255, 255, 255, 0.95);
+$tabs-bottom-background-color: rgba(46, 46, 46, 0.95);
 $tabs-bottom-border: $border;
 $tabs-bottom-tab-font-size: 9px;
 $tabs-bottom-tab-padding: 3px 0 1px;
-$tabs-bottom-tab-color: rgba(150, 150, 150, 1);
-$tabs-bottom-tab-border-color: rgba(177, 177, 177, 0.5);
-$tabs-bottom-tab-active-color: rgb(26, 26, 26);
+$tabs-bottom-tab-color: rgb(190, 190, 190);
+$tabs-bottom-tab-border-color: rgba(69, 69, 69, 0.5);
+$tabs-bottom-tab-active-color: rgb(240, 240, 240);
 
 $tabs-bottom-tab-icon-size: 35px;
 $tabs-bottom-tab-icon-padding: 2px;
@@ -64,7 +64,7 @@ $tabs-bottom-notification-font-size: 12px;
 $tabs-bottom-notification-background-color: rgb(103, 144, 180);
 
 /* Striped */
-$tabs-striped-background-color: rgba(204, 204, 204, 0);
+$tabs-striped-background-color: rgba(60, 60, 60, 0.8);
 $tabs-striped-tab-padding: 12px;
 $tabs-striped-tab-border-width: $border-width;
 $tabs-striped-tab-border-color: rgba(177, 177, 177, 0.5);
@@ -79,7 +79,7 @@ $tabs-striped-tab-active-border-color: $tabs-striped-tab-active-color;
 $tabs-striped-tab-active-border-bottom: $tabs-striped-tab-active-border-width solid $tabs-striped-tab-active-border-color;
 
 /* Segmented */
-$tabs-segmented-background-color: rgba(204, 204, 204, 0);
+$tabs-segmented-background-color: rgba(60, 60, 60, 0.8);
 $tabs-segmented-border-bottom: $border;
 $tabs-segmented-padding: 7px;
 $tabs-segmented-tab-font-size: 13px;
@@ -91,7 +91,7 @@ $tabs-segmented-tab-border-color: $tabs-segmented-tab-color;
 $tabs-segmented-tab-border-radius: $default-border-radius;
 $tabs-segmented-tab-background-color: $tabs-segmented-background-color;
 $tabs-segmented-tab-background-width: 1px;
-$tabs-segmented-tab-active-color: rgb(26, 26, 26);
+$tabs-segmented-tab-active-color: $tabs-segmented-background-color;
 $tabs-segmented-tab-active-background-color: $tabs-segmented-tab-color;
 
 $tabs-segmented-notification-padding: 1px 6px;
@@ -128,6 +128,7 @@ $input-font-size: $default-font-size;
 $input-border: $border;
 $input-border-radius: $default-border-radius;
 $input-checkbox-label-margin: 4px;
+$input-search-padding-left: 30px;
 
 /* Select */
 $select-padding: 5px;

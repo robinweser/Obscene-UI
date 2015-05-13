@@ -13,5 +13,6 @@
         @include border-radius($input-box-input-border-radius);
         font-size: $input-box-input-font-size;
         padding: $input-box-input-padding;
+        padding-left: $input-search-padding-left;
     }
 }

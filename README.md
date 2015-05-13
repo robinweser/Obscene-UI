@@ -19,7 +19,8 @@ grunt THEME
 builds THEME.min.css within `path/to/obscene/bin`.
 
 Read the [Documentation](http://unverschaemt.github.io/Obscene-Theme/docs/) to get familiar with the structure and classes.
-If you need functionality such as tab switching and auto-sizing, please check [Obscene.js](https://github.com/unverschaemt/Obscene.js) or even a full [React.js](https://facebook.github.io/react/) UI library which does the job.
+If you need functionality such as tab switching and auto-sizing, please check [Obscene.js](https://github.com/unverschaemt/Obscene.js).   
+If you're into [React.js](https://facebook.github.io/react/) take a look at [Obscene](https://github.com/unverschaemt/Obscene) which is a full-featured UI Library build on Obscene UI and Obscene.js.
 
 ## Benefit ##
 * mobile optimized app look & feel just out of the box

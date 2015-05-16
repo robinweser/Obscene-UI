@@ -1,7 +1,17 @@
 /*-------- COLOR SHEME ---------*/
+$text-color: rgb(60, 60, 60);
+$secondary-text-color: gray;
+$foreground-color: rgb(30, 30, 30);
+$background-color: rgb(248, 248, 248);
+$bar-color: rgba(255, 255, 255, 0.9);
+$border-color: rgb(191, 191, 191);
+$highlight-color: rgb(103, 144, 180);
+$confirm-color: rgb(99, 177, 159);
+$decline-color: rgb(211, 126, 126);
+$button-background-colors: (confirm: $confirm-color, decline: $decline-color);
+$list-flag-colors: (blue: $highlight-color, red: $decline-color, green: $confirm-color);
 
 /*-------- DEFAULT ---------*/
-$default-color: rgb(60, 60, 60);
 $default-font: "Open Sans", "Lato", sans-serif;
 $default-font-size: 14px;
 $default-text-padding: 10px;
@@ -9,7 +19,6 @@ $default-box-padding: 5px;
 $default-border-radius: 5px;
 
 /* Border */
-$border-color: rgb(191, 191, 191);
 $border-style: solid;
 $border-width: 1px;
 $border: $border-width $border-style $border-color;
@@ -20,7 +29,6 @@ $button-padding: 12px;
 $button-small-padding: 8px;
 $button-margin: 4px;
 $button-background-color: rgba(103, 144, 180, 0.95);
-$button-background-colors: (confirm: rgba(99, 177, 159, 0.95), decline: rgba(211, 126, 126, 0.95));
 $button-color: white;
 $button-border-width: $border-width;
 $button-border-style: $border-style;
@@ -64,7 +72,7 @@ $tabs-bottom-notification-font-size: 12px;
 $tabs-bottom-notification-background-color: rgb(103, 144, 180);
 
 /* Striped */
-$tabs-striped-background-color:  rgba(255, 255, 255, 0.85);
+$tabs-striped-background-color: rgba(255, 255, 255, 0.85);
 $tabs-striped-tab-padding: 12px;
 $tabs-striped-tab-border-width: $border-width;
 $tabs-striped-tab-border-color: rgba(177, 177, 177, 0.5);
@@ -73,13 +81,13 @@ $tabs-striped-tab-font-size: 9px;
 $tabs-striped-tab-color: rgba(150, 150, 150, 1);
 $tabs-striped-tab-background-color: $tabs-striped-background-color;
 $tabs-striped-tab-active-background-color: $tabs-striped-tab-background-color;
-$tabs-striped-tab-active-color: map-get($button-background-colors, confirm);
+$tabs-striped-tab-active-color: $confirm-color;
 $tabs-striped-tab-active-border-width: 4px;
 $tabs-striped-tab-active-border-color: $tabs-striped-tab-active-color;
 $tabs-striped-tab-active-border-bottom: $tabs-striped-tab-active-border-width solid $tabs-striped-tab-active-border-color;
 
 /* Segmented */
-$tabs-segmented-background-color:  rgba(255, 255, 255, 0.85);
+$tabs-segmented-background-color: rgba(255, 255, 255, 0.85);
 $tabs-segmented-border-bottom: $border;
 $tabs-segmented-padding: 7px;
 $tabs-segmented-tab-font-size: 13px;
@@ -167,7 +175,6 @@ $detail-list-image-margin: 7px;
 
 /*----- FLAGS ------*/
 $list-flag-border-width: 12px;
-$list-flag-colors: (blue: rgb(103, 144, 180), red: rgb(211, 126, 126), green: rgb(99, 177, 159));
 
 /*----- MAPPING -------*/
 $key-value-label-value-font-size: 16px;

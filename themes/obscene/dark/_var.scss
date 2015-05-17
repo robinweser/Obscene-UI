@@ -1,7 +1,7 @@
 /*-------- COLOR SHEME ---------*/
 
 /*-------- DEFAULT ---------*/
-$default-color: rgb(203, 203, 203);
+$primary-color: rgb(203, 203, 203);
 $default-font: "Open Sans", "Lato", sans-serif;
 $default-font-size: 14px;
 $default-text-padding: 10px;
@@ -152,7 +152,7 @@ $list-ordered-padding-left: 28px;
 $list-definition-padding-left: $list-ordered-padding-left;
 
 $list-group-background-color: rgb(219, 219, 219);
-$list-group-color: $default-color;
+$list-group-color: $primary-color;
 $list-group-padding: 6px 10px 7px;
 $list-group-font-weight: 700;
 $list-group-border: $border;

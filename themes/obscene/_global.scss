@@ -1,6 +1,7 @@
 * {
     font-size: $default-font-size;
     font-family: $default-font;
+    color: $primary-color;
 }
 
 *,
@@ -15,4 +16,12 @@ html,
 body {
     overflow-x: hidden;
     max-width: 100%;
+}
+
+body {
+    background: $background-color;
+}
+
+input {
+    color: $input-color;
 }

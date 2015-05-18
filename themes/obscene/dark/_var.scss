@@ -1,7 +1,19 @@
 /*-------- COLOR SHEME ---------*/
+$primary-color: rgb(229, 229, 229);
+$secondary-color: rgb(128, 128, 128);
+$tertiary-color: rgb(33, 33, 33);
+$foreground-color: rgb(216, 216, 216);
+$background-color: rgb(41, 41, 41);
+$bar-color: rgba(26, 26, 26, 0.9);
+$tabs-color: rgba($background-color, 0.9);
+$border-color: rgba(62, 62, 62, 0.87);
+$highlight-color: rgb(103, 144, 180);
+$confirm-color: rgb(99, 177, 159);
+$decline-color: rgb(211, 126, 126);
+$button-background-colors: (confirm: $confirm-color, decline: $decline-color);
+$list-flag-colors: ("blue": $highlight-color, "red": $decline-color, "green": $confirm-color);
 
 /*-------- DEFAULT ---------*/
-$primary-color: rgb(203, 203, 203);
 $default-font: "Open Sans", "Lato", sans-serif;
 $default-font-size: 14px;
 $default-text-padding: 10px;
@@ -9,7 +21,6 @@ $default-box-padding: 5px;
 $default-border-radius: 5px;
 
 /* Border */
-$border-color: rgb(92, 92, 92);
 $border-style: solid;
 $border-width: 1px;
 $border: $border-width $border-style $border-color;
@@ -19,8 +30,7 @@ $border-thick-width: 2px;
 $button-padding: 12px;
 $button-small-padding: 8px;
 $button-margin: 4px;
-$button-background-color: rgba(103, 144, 180, 0.95);
-$button-background-colors: (confirm: rgba(99, 177, 159, 0.95), decline: rgba(211, 126, 126, 0.95));
+$button-background-color: $highlight-color;
 $button-color: white;
 $button-border-width: $border-width;
 $button-border-style: $border-style;
@@ -32,24 +42,24 @@ $button-small-font-size: 10px;
 $button-large-font-size: 20px;
 
 /*-------- TABLE ---------*/
-$table-background-color: #3b3b3b;
-$table-striped-background-color: rgba(42, 42, 42, 0.4);
+$table-background-color: $background-color;
+$table-striped-background-color: rgba(217, 217, 217, 0.18);
 $table-cell-padding: 10px;
 
 /*-------- HEADER ---------*/
-$header-background-color: rgba(46, 46, 46, 0.85);
+$header-background-color: $bar-color;
 $header-font-size: 15px;
 $header-padding: 12px 6px 11px;
 
 /*-------- TABS ---------*/
 /* Bottom */
-$tabs-bottom-background-color: rgba(46, 46, 46, 0.95);
+$tabs-bottom-background-color: $tabs-color;
 $tabs-bottom-border: $border;
 $tabs-bottom-tab-font-size: 9px;
 $tabs-bottom-tab-padding: 3px 0 1px;
-$tabs-bottom-tab-color: rgb(190, 190, 190);
-$tabs-bottom-tab-border-color: rgba(69, 69, 69, 0.5);
-$tabs-bottom-tab-active-color: rgb(240, 240, 240);
+$tabs-bottom-tab-color: $secondary-color;
+$tabs-bottom-tab-border-color: rgba(177, 177, 177, 0.5);
+$tabs-bottom-tab-active-color: $foreground-color;
 
 $tabs-bottom-tab-icon-size: 35px;
 $tabs-bottom-tab-icon-padding: 2px;
@@ -61,31 +71,31 @@ $tabs-bottom-notification-padding: 1px 6px;
 $tabs-bottom-notification-color: white;
 $tabs-bottom-notification-border-radius: 50px;
 $tabs-bottom-notification-font-size: 12px;
-$tabs-bottom-notification-background-color: rgb(103, 144, 180);
+$tabs-bottom-notification-background-color: $highlight-color;
 
 /* Striped */
-$tabs-striped-background-color: rgba(60, 60, 60, 0.8);
+$tabs-striped-background-color: $tabs-color;
 $tabs-striped-tab-padding: 12px;
 $tabs-striped-tab-border-width: $border-width;
 $tabs-striped-tab-border-color: rgba(177, 177, 177, 0.5);
 $tabs-striped-tab-border-bottom: $tabs-striped-tab-border-width solid $tabs-striped-tab-border-color;
 $tabs-striped-tab-font-size: 9px;
-$tabs-striped-tab-color: rgba(150, 150, 150, 1);
+$tabs-striped-tab-color: $secondary-color;
 $tabs-striped-tab-background-color: $tabs-striped-background-color;
 $tabs-striped-tab-active-background-color: $tabs-striped-tab-background-color;
-$tabs-striped-tab-active-color: map-get($button-background-colors, confirm);
+$tabs-striped-tab-active-color: $confirm-color;
 $tabs-striped-tab-active-border-width: 4px;
 $tabs-striped-tab-active-border-color: $tabs-striped-tab-active-color;
 $tabs-striped-tab-active-border-bottom: $tabs-striped-tab-active-border-width solid $tabs-striped-tab-active-border-color;
 
 /* Segmented */
-$tabs-segmented-background-color: rgba(60, 60, 60, 0.8);
+$tabs-segmented-background-color: $tabs-color;
 $tabs-segmented-border-bottom: $border;
 $tabs-segmented-padding: 7px;
 $tabs-segmented-tab-font-size: 13px;
 $tabs-segmented-tab-padding: 6px 8px;
 $tabs-segmented-tab-min-width: 50px;
-$tabs-segmented-tab-color: rgba(150, 150, 150, 1);
+$tabs-segmented-tab-color: darken($primary-color, 20%);
 $tabs-segmented-tab-border-width: 1px;
 $tabs-segmented-tab-border-color: $tabs-segmented-tab-color;
 $tabs-segmented-tab-border-radius: $default-border-radius;
@@ -116,16 +126,18 @@ $form-label-color: inherit;
 $form-input-color: inherit;
 
 /* Input box */
-$input-box-background-color: $border-color;
+$input-box-background-color: lighten($background-color, 7%);
 $input-box-padding: 5px;
 $input-box-input-padding: 8px 6px;
-$input-box-input-border-radius: 6px;
+$input-box-input-border-radius: $default-border-radius;
 $input-box-input-font-size: 14px;
 
 /* Input */
 $input-padding: 10px 8px;
 $input-font-size: $default-font-size;
 $input-border: $border;
+$input-background-color: lighten($background-color, 18%);
+$input-color: $primary-color;
 $input-border-radius: $default-border-radius;
 $input-checkbox-label-margin: 4px;
 $input-search-padding-left: 30px;
@@ -145,13 +157,13 @@ $textarea-border-width: 1px;
 $textarea-border: $input-border;
 
 /*------ LIST -------*/
-$list-background-color: rgba(255, 255, 255, 0.95);
+$list-background-color: $bar-color;
 $list-item-padding: 12px 10px;
-$list-item-selected-background-color: rgb(255, 255, 255);
+$list-item-selected-background-color: rgba(78, 78, 78, 0.17);
 $list-ordered-padding-left: 28px;
 $list-definition-padding-left: $list-ordered-padding-left;
 
-$list-group-background-color: rgb(219, 219, 219);
+$list-group-background-color: $tertiary-color;
 $list-group-color: $primary-color;
 $list-group-padding: 6px 10px 7px;
 $list-group-font-weight: 700;
@@ -167,7 +179,6 @@ $detail-list-image-margin: 7px;
 
 /*----- FLAGS ------*/
 $list-flag-border-width: 12px;
-$list-flag-colors: (blue: rgb(103, 144, 180), red: rgb(211, 126, 126), green: rgb(99, 177, 159));
 
 /*----- MAPPING -------*/
 $key-value-label-value-font-size: 16px;
@@ -182,7 +193,7 @@ $popup-padding: 10px;
 $popup-message-padding: 20px;
 $popup-message-border: $border;
 $popup-message-background-color: white;
-$popup-message-border-radius: 30px;
+$popup-message-border-radius: $default-border-radius;
 
 /*------ TOOLBAR ------*/
 $toolbar-background-color: $tabs-segmented-background-color;
@@ -191,9 +202,9 @@ $toolbar-font-size: $default-font-size;
 $toolbar-input-padding: $toolbar-font-size - $toolbar-padding;
 
 /*------ CODE -------*/
-$code-background-color: #fafafa;
+$code-background-color: lighten($background-color, 10%);
 $code-padding: 2px 4px;
-$code-border-radius: 4px;
+$code-border-radius: $default-border-radius;
 
 /*------ HR --------*/
 $hr-margin: 4px;
@@ -202,7 +213,7 @@ $hr-color: $border-color;
 /*------- PROGRESS -------*/
 $progress-height: 30px;
 $progress-value-background-color: map-get($button-background-colors, confirm);
-$progress-background-color: #d3d3d3;
+$progress-background-color: $tertiary-color;
 $progress-border-radius: $default-border-radius;
 $progress-border-width: 1px;
 

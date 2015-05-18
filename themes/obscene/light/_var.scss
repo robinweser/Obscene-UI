@@ -3,17 +3,17 @@ $primary-color: rgb(60, 60, 60);
 $secondary-color: rgb(128, 128, 128);
 $tertiary-color: rgb(215, 215, 215);
 $foreground-color: rgb(30, 30, 30);
-$background-color: rgb(248, 248, 248);
+$background-color: rgb(240, 240, 240);
 $bar-color: rgba(255, 255, 255, 0.9);
 $border-color: rgb(191, 191, 191);
 $highlight-color: rgb(103, 144, 180);
 $confirm-color: rgb(99, 177, 159);
 $decline-color: rgb(211, 126, 126);
 $button-background-colors: (confirm: $confirm-color, decline: $decline-color);
-$list-flag-colors: (blue: $highlight-color, red: $decline-color, green: $confirm-color);
+$list-flag-colors: ("blue": $highlight-color, "red": $decline-color, "green": $confirm-color);
 
 /*-------- DEFAULT ---------*/
-$default-font: "Open Sans", "Lato", sans-serif;
+$default-font: "Open Sans",  "Lato", sans-serif;
 $default-font-size: 14px;
 $default-text-padding: 10px;
 $default-box-padding: 5px;
@@ -70,7 +70,7 @@ $tabs-bottom-notification-padding: 1px 6px;
 $tabs-bottom-notification-color: white;
 $tabs-bottom-notification-border-radius: 50px;
 $tabs-bottom-notification-font-size: 12px;
-$tabs-bottom-notification-background-color: $confirm-color;
+$tabs-bottom-notification-background-color: $highlight-color;
 
 /* Striped */
 $tabs-striped-background-color: $bar-color;
@@ -128,12 +128,14 @@ $form-input-color: inherit;
 $input-box-background-color: $border-color;
 $input-box-padding: 5px;
 $input-box-input-padding: 8px 6px;
-$input-box-input-border-radius: 6px;
+$input-box-input-border-radius: $default-border-radius;
 $input-box-input-font-size: 14px;
 
 /* Input */
 $input-padding: 10px 8px;
+$input-color: $primary-color;
 $input-font-size: $default-font-size;
+$input-background-color: $background-color;
 $input-border: $border;
 $input-border-radius: $default-border-radius;
 $input-checkbox-label-margin: 4px;
@@ -190,7 +192,7 @@ $popup-padding: 10px;
 $popup-message-padding: 20px;
 $popup-message-border: $border;
 $popup-message-background-color: white;
-$popup-message-border-radius: 30px;
+$popup-message-border-radius: $default-border-radius;
 
 /*------ TOOLBAR ------*/
 $toolbar-background-color: $tabs-segmented-background-color;
@@ -201,7 +203,7 @@ $toolbar-input-padding: $toolbar-font-size - $toolbar-padding;
 /*------ CODE -------*/
 $code-background-color: #fafafa;
 $code-padding: 2px 4px;
-$code-border-radius: 4px;
+$code-border-radius: $default-border-radius;
 
 /*------ HR --------*/
 $hr-margin: 4px;

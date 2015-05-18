@@ -1,10 +1,11 @@
 {
-    "name": "Obscene.css",
-    "version": "0.1.0",
-    "description": "Obscene.css is a responsive mobile-friendly boilerplate stylesheet for webapps especially for iOS.",
-    "repository": "https://github.com/rofrischmann/Obscene.css",
-    "devDependencies": {
-        "grunt": "~0.4.5",
-        "grunt-contrib-sass": "~0.9.0"
-    }
+  "name": "Obscene.css",
+  "version": "0.1.0",
+  "description": "Obscene.css is a responsive mobile-friendly boilerplate stylesheet for webapps especially for iOS.",
+  "repository": "https://github.com/rofrischmann/Obscene.css",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-sass": "~0.9.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
 }

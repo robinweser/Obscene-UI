@@ -13,7 +13,7 @@ $button-background-colors: (confirm: $confirm-color, decline: $decline-color);
 $list-flag-colors: ("blue": $highlight-color, "red": $decline-color, "green": $confirm-color);
 
 /*-------- DEFAULT ---------*/
-$default-font: "Open Sans",  "Lato", sans-serif;
+$default-font: "Open Sans", "Lato", sans-serif;
 $default-font-size: 14px;
 $default-text-padding: 10px;
 $default-box-padding: 5px;
@@ -135,7 +135,7 @@ $input-box-input-font-size: 14px;
 $input-padding: 10px 8px;
 $input-color: $primary-color;
 $input-font-size: $default-font-size;
-$input-background-color: $background-color;
+$input-background-color: lighten($background-color, 20%);
 $input-border: $border;
 $input-border-radius: $default-border-radius;
 $input-checkbox-label-margin: 4px;
@@ -217,7 +217,7 @@ $progress-border-radius: $default-border-radius;
 $progress-border-width: 1px;
 
 /*------ QUOTE ------*/
-$quote-color: #cecece;
+$quote-color: $tertiary-color;
 $blockquote-margin-left: 10px;
 $blockquote-padding-left: 5px;
 $blockquote-border-left: $border;

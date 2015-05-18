@@ -19,9 +19,20 @@ module.exports = function (grunt) {
                     'bin/light/obscene.min.css': 'themes/obscene/light/theme.scss'
                 }
             }
-        }
+        },
+        watch: {
+            theme: {
+                files: '**/*.scss',
+                tasks: ['default'],
+                options: {
+                    debounceDelay: 500,
+                },
+            },
+        },
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+
     grunt.registerTask('default', ['sass:obscene']);
     grunt.registerTask('obscene', ['sass:obscene']);
     grunt.registerTask('core', ['sass:core']);

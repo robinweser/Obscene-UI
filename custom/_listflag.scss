@@ -7,8 +7,9 @@
 li {
     &.flag {
         border-left: $border;
+        border-width: $list-flag-border-width;
     }
     @each $key, $value in $list-flag-colors {
-        @include flag(key, $list-flag-border-width, solid, value);
+        @include flag($key, $list-flag-border-width, solid, $value);
     }
 }

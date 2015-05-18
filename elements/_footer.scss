@@ -1,3 +1,5 @@
 footer {
     @extend header;
+    border-top: $border;
+    border-bottom: none;
 }

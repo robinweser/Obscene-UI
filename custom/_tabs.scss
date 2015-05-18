@@ -64,9 +64,13 @@
             width: auto;
             padding: $tabs-bottom-tab-icon-padding;
             margin-top: -1 * $tabs-bottom-tab-icon-padding;
+            color: $tabs-bottom-tab-color;
         }
         &.active {
             color: $tabs-bottom-tab-active-color;
+            .tab-icon {
+                color: $tabs-bottom-tab-active-color;
+            }
         }
         &.active img.tab-icon {
             @include opacity(1);

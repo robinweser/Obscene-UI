@@ -1,6 +1,7 @@
 input {
     -webkit-border-radius: 0;
     border: none;
+    background-color: $input-background-color;
     &[type="submit"] {
         @extend button;
     }
@@ -20,7 +21,7 @@ input {
     }
     &[type="radio"],
     &[type="checkbox"] {
-        vertical-align: -1px;
+        vertical-align: 1px;
         margin-right: $input-checkbox-label-margin;
     }
 }

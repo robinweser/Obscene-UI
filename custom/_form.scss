@@ -1,6 +1,6 @@
-.form {
-    &-inline,
-    &-stacked {
+form {
+    &.inline,
+    &.stacked {
         @extend %width-full;
         @extend %inline-block-margin-fix;
         input {
@@ -8,37 +8,46 @@
             border: none;
             margin: 0;
             color: $form-input-color;
+            font-size: $input-font-size;
             @include border-radius(0);
+            padding: $form-input-padding;
         }
         label {
             display: inline-block;
             color: $form-label-color;
-        }
-        input,
-        label {
-            padding: $form-input-padding;
+            padding-left: $form-input-padding;
+            color: $secondary-color;
         }
     }
-    &-inline {
+    &.inline {
         input {
             width: $form-inline-input-width;
         }
         label {
             width: $form-inline-label-width;
+            padding: $form-input-padding;
         }
         input,
         label {
             border-bottom: $form-inline-border-bottom;
         }
     }
-    &-stacked {
+    &.stacked {
         label,
         input {
             display: block;
             width: 100%;
         }
+        label {
+            + input {
+                border-bottom: $form-stacked-border-bottom;
+                padding-top: $form-input-padding / 2;
+            }
+        }
         input {
-            border-bottom: $form-stacked-border-bottom;
+            + label {
+                border-bottom: $form-stacked-border-bottom;
+            }
         }
     }
 }

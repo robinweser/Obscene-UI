@@ -25,24 +25,24 @@ If you're into [React.js](https://facebook.github.io/react/) take a look at [Obs
 ## Benefit ##
 * mobile optimized app look & feel just out of the box
 * Fully scalable and **responsive**
-* native look (iOS)
+* native look (iOS right now)
 * easy to customize
 * optimized to work with **[Phonegap](http://phonegap.com/)**
 
 ## Roadmap ##
 - [x] Mobile UI Elements
 - [x] Light Theme
-- [ ] (in progress) Dark Theme
+- [x] Dark Theme
 - [ ] iOS Theme
 - [ ] Material Design Theme
-- [ ] (in progress) Documentation + Documentation Generator (for custom themes) 
+- [ ] Documentation / GitHub Page (in Progress)
 - [ ] additional bunch of new custom elements
 - [ ] mixins which help generating styles faster
 - [ ] Full [React.js](https://facebook.github.io/react/) UI library with mobile-ready components based on Obscene UI and Obscene.js
 
 
 ## License
-Obscene UI is licensed under the MIT license. (http://opensource.org/licenses/MIT)
+Obscene UI is licensed under the [MIT License](http://opensource.org/licenses/MIT).
 
 ## Contributing
 If you've got something useful just create a pull request or let me know and I'll add it.    

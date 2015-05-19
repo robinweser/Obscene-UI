@@ -1,15 +1,66 @@
-#logo {
-    position: fixed;
-    max-width: 1000px;
-    bottom: 0;
+.screen iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
 }
 
-html, body{
-    height: 100%;
+.content {
+    font-size: 16px;
+    line-height: 20px;
+    color: #393939;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    margin: 20px 0 5px;
+}
+
+h2, h3 {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #363636;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+
+footer {
+    font-weight: 200;
+    text-transform: none;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6)
+}
+
+a,
+footer a {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    text-decoration: none;
+    color: #b71a1a;
+    border-bottom: 2px solid transparent !important;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
-* {
-    box-sizing: border-box;
+
+a:hover,
+footer a:hover {
+    border-bottom: 2px solid rgba(183, 26, 26, 0.55) !important;
+}
+
+body.wrapper {
+    background: rgb(240, 240, 240);
+    background-image: url(../res/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-attachment: fixed;
 }

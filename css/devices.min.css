@@ -1,0 +1,257 @@
+.marvel-device {
+    display: inline-block;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.marvel-device .screen {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    color: black;
+    z-index: 2;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 0 0 3px #111;
+    box-shadow: 0 0 0 3px #111
+}
+
+.marvel-device .top-bar,
+.marvel-device .bottom-bar {
+    height: 3px;
+    background: black;
+    width: 100%;
+    display: block
+}
+
+.marvel-device .middle-bar {
+    width: 3px;
+    height: 4px;
+    top: 0px;
+    left: 90px;
+    background: black;
+    position: absolute
+}
+
+.marvel-device.iphone5s {
+    padding: 105px 22px;
+    background: #606060;
+    width: 320px;
+    height: 568px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.marvel-device.iphone5s:before {
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    position: absolute;
+    top: 4px;
+    content: '';
+    left: 4px;
+    -webkit-border-radius: 46px;
+    border-radius: 46px;
+    background: #211f1f;
+    z-index: 1;
+}
+
+.marvel-device.iphone5s .sleep,
+.sleep {
+    position: absolute;
+    top: -4px;
+    right: 60px;
+    width: 60px;
+    height: 4px;
+    -webkit-border-radius: 2px 2px 0px 0px;
+    border-radius: 2px 2px 0px 0px;
+    background: #282727
+}
+
+.marvel-device.iphone5s .volume,
+.volume {
+    position: absolute;
+    left: -4px;
+    top: 180px;
+    z-index: 0;
+    height: 27px;
+    width: 4px;
+    -webkit-border-radius: 2px 0px 0px 2px;
+    border-radius: 2px 0px 0px 2px;
+    background: #282727
+}
+
+.marvel-device.iphone5s .volume:before,
+.volume:before {
+    position: absolute;
+    left: 0px;
+    top: -75px;
+    height: 35px;
+    width: 4px;
+    -webkit-border-radius: 2px 0px 0px 2px;
+    border-radius: 2px 0px 0px 2px;
+    background: inherit;
+    content: '';
+    display: block
+}
+
+.marvel-device.iphone5s .volume:after,
+.volume:after {
+    position: absolute;
+    left: 0px;
+    bottom: -64px;
+    height: 27px;
+    width: 4px;
+    -webkit-border-radius: 2px 0px 0px 2px;
+    border-radius: 2px 0px 0px 2px;
+    background: inherit;
+    content: '';
+    display: block
+}
+
+.marvel-device.iphone5s.landscape,
+.landscape {
+    padding: 22px 105px;
+    height: 320px;
+    width: 568px
+}
+
+.marvel-device.iphone5s.landscape .sleep,
+.landscape .sleep {
+    right: -4px;
+    top: calc(100% - 120px);
+    height: 60px;
+    width: 4px;
+    -webkit-border-radius: 0px 2px 2px 0px;
+    border-radius: 0px 2px 2px 0px
+}
+
+.marvel-device.iphone5s.landscape .volume,
+.landscape .volume {
+    width: 27px;
+    height: 4px;
+    top: -4px;
+    left: calc(100% - 180px);
+    -webkit-border-radius: 2px 2px 0px 0px;
+    border-radius: 2px 2px 0px 0px
+}
+
+.marvel-device.iphone5s.landscape .volume:before,
+.landscape .volume:before {
+    width: 35px;
+    height: 4px;
+    top: 0px;
+    right: -75px;
+    left: auto;
+    -webkit-border-radius: 2px 2px 0px 0px;
+    border-radius: 2px 2px 0px 0px
+}
+
+.marvel-device.iphone5s.landscape .volume:after,
+.landscape .volume:after {
+    bottom: 0px;
+    left: -64px;
+    z-index: 999;
+    height: 4px;
+    width: 27px;
+    -webkit-border-radius: 2px 2px 0px 0px;
+    border-radius: 2px 2px 0px 0px
+}
+
+.marvel-device.iphone5s .home {
+    -moz-border-radius: 36px;
+    -webkit-border-radius: 36px;
+    border-radius: 36px;
+    width: 68px;
+    -webkit-box-shadow: inset 0 0 0 4px #2c2b2c;
+    box-shadow: inset 0 0 0 4px #2c2b2c;
+    height: 68px;
+    position: absolute;
+    left: 50%;
+    margin-left: -34px;
+    bottom: 19px;
+    z-index: 3
+}
+
+.marvel-device.iphone5s .home i {
+    color: rgba(203, 91, 91, 0.5);
+    padding: 19px;
+    font-size: 30px;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+.marvel-device.iphone5s .home i:hover {
+    color: rgba(203, 91, 91, 0.9);
+}
+
+.marvel-device.iphone5s .top-bar {
+    top: 70px;
+    position: absolute;
+    left: 0
+}
+
+.marvel-device.iphone5s .bottom-bar {
+    bottom: 70px;
+    position: absolute;
+    left: 0
+}
+
+.marvel-device.iphone5s.landscape .home {
+    left: 19px;
+    bottom: 50%;
+    margin-bottom: -34px;
+    margin-left: 0px
+}
+
+.marvel-device.iphone5s.landscape .top-bar {
+    left: 70px;
+    top: 0px;
+    width: 3px;
+    height: 100%
+}
+
+.marvel-device.iphone5s.landscape .bottom-bar {
+    right: 70px;
+    left: auto;
+    bottom: 0px;
+    width: 3px;
+    height: 100%
+}
+
+.marvel-device.iphone5s.silver {
+    background: #bcbcbc
+}
+
+.marvel-device.iphone5s.silver:before {
+    background: #fcfcfc;
+}
+
+.marvel-device.iphone5s:before,
+.marvel-device.iphone5s.silver:before {
+    background-image: url('../res/appsticker.png');
+    background-size: auto 95px;
+    background-position: 50px 5px;
+    background-repeat: no-repeat;
+}
+
+.marvel-device.iphone5s.landscape:before {
+    background-image: none;
+}
+
+.marvel-device.iphone5s.silver .volume,
+.marvel-device.iphone5s.silver .sleep {
+    background: #d6d6d6
+}
+
+.marvel-device.iphone5s.silver .top-bar,
+.marvel-device.iphone5s.silver .bottom-bar {
+    background: #eaebec
+}
+
+.marvel-device.iphone5s.silver .home {
+    -webkit-box-shadow: inset 0 0 0 4px #bcbcbc;
+    box-shadow: inset 0 0 0 4px #bcbcbc
+}

@@ -6,3 +6,7 @@
 /.sass-cache/
 /bin/
 /demo/
+/UI/
+/old/
+*.map
+/examples/app.html

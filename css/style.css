@@ -1,12 +1,7 @@
 .screen iframe {
-    height: 568px;
-    width: 320px;
-    border: none;
-}
-
-.landscape .screen iframe {
-    height: 320px;
-    width: 568px;
+    height: 100%;
+    width: 100%;
+    border: 0px solid gray;
 }
 
 .content {
@@ -14,12 +9,6 @@
     line-height: 20px;
     color: #393939;
     font-weight: 300;
-}
-
-@media (max-width: 800px) {
-    .content {
-        padding-top: 50px;
-    }
 }
 
 h1 {
@@ -41,7 +30,9 @@ h3 {
     font-size: 24px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -49,11 +40,12 @@ h1, h2, h3 {
 footer {
     font-weight: 200;
     text-transform: none;
-    padding: 20px;
+    padding: 30px 10px;
     background: rgba(255, 255, 255, 0.6);
     position: relative;
     bottom: 0;
     display: block;
+    border-bottom: 1px solid lightgray;
 }
 
 a,
@@ -80,6 +72,34 @@ body.wrapper {
     background-image: url(../res/background.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: bottom right;
     background-attachment: fixed;
+}
+
+@media (max-width: 800px) {
+    body.wrapper {
+        background-size: 120% auto;
+    }
+    .content {
+        padding-top: 90;
+    }
+    h1 {
+        padding-right: 20px;
+    }
+    #toggleLandscape,
+    #toggleTheme {
+        display: none;
+    }
+    #openDemo {
+        display: inline-block !important;
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+    #iphone5s {
+        display: none;
+    }
+    #forkgithub {
+        width: 120px !important;
+        height: 120px !important;
+    }
 }

@@ -12,7 +12,7 @@
 
 <body class="center wrapper">
     <iframe src="https://ghbtns.com/github-btn.html?user=unverschaemt&repo=Obscene-UI&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170px" height="30px" style="position: absolute; left: 5px; top: 5px"></iframe>
-    <a href="https://github.com/unverschaemt/Obscene-UI"><img style="position: absolute; top: 0; right: 0; border: 0; width: 140px; height: 140px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-grey@2x.png" alt="Fork me on GitHub">
+    <a href="https://github.com/unverschaemt/Obscene-UI"><img style="position: absolute; top: 0; right: 0; border: 0; width: 140px; height: 140px;" id="forkgithub" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-grey@2x.png" alt="Fork me on GitHub">
     </a>
     <div class="content text-padding width-full">
         <h1>Obscene UI</h1>
@@ -20,15 +20,17 @@
         <br> This demo shows all common css classes.
         <br> It also let's you toggle the different default themes.
     </div>
-    <a style="font-size: 18px" href="javascript:toggleLandscape()">Toggle Landscape</a> &nbsp; &nbsp;
-    <a style="font-size: 18px" href="javascript:toggleTheme()">Toggle Theme</a>
+    <a id="toggleLandscape" style="font-size: 18px" href="javascript:toggleLandscape()">Toggle Landscape</a> &nbsp; &nbsp;
+    <a id="toggleTheme" style="font-size: 18px" href="javascript:toggleTheme()">Toggle Theme</a>
+    <button class="outlined rounded thick-border decline" id="openDemo" style="font-size: 18px; display: none" onclick="javascript:window.location.href='examples/default.html'">Open Demo</button>
     <br>
     <br>
     <div id="iphone5s" class="marvel-device iphone5s silver">
         <div class="top-bar"></div>
         <div class="sleep"></div>
-        <div class="volume"></div>
-        <div class="screen">
+        <div class="volume">
+        </div>
+        <div class="screen no-scrollbar">
             <iframe id="app" src="examples/default.html"></iframe>
         </div>
         <div class="home"><i class="fa fa-arrows-alt" onclick="javascript:window.location.href='examples/default.html'"></i>

@@ -18,7 +18,8 @@ h1 {
     margin: 20px 0 5px;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-size: 28px;
     line-height: 30px;
     font-weight: 300;
@@ -29,12 +30,14 @@ h3 {
     font-size: 24px;
 }
 
-
 footer {
     font-weight: 200;
     text-transform: none;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.6)
+    background: rgba(255, 255, 255, 0.6);
+    position: relative;
+    bottom: 0;
+    display: block;
 }
 
 a,

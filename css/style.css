@@ -67,6 +67,10 @@ footer a:hover {
     border-bottom: 2px solid rgba(183, 26, 26, 0.55) !important;
 }
 
+.hidden {
+    display: none;
+}
+
 body.wrapper {
     background: rgb(240, 240, 240);
     background-image: url(../res/background.png);
@@ -87,7 +91,8 @@ body.wrapper {
         padding-right: 20px;
     }
     #toggleLandscape,
-    #toggleTheme {
+    #toggleTheme,
+    #toggleIPad {
         display: none;
     }
     #openDemo {

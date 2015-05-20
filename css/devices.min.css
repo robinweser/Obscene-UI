@@ -159,7 +159,7 @@
     border-radius: 2px 2px 0px 0px
 }
 
-.marvel-device.iphone5s .home {
+.marvel-device.iphone5s .home{
     -moz-border-radius: 36px;
     -webkit-border-radius: 36px;
     border-radius: 36px;
@@ -173,8 +173,22 @@
     bottom: 19px;
     z-index: 3
 }
+.marvel-device.ipad .home {
+    -moz-border-radius: 36px;
+    -webkit-border-radius: 36px;
+    border-radius: 36px;
+    width: 68px;
+    -webkit-box-shadow: inset 0 0 0 4px #2c2b2c;
+    box-shadow: inset 0 0 0 4px #2c2b2c;
+    height: 68px;
+    position: absolute;
+    left: 50%;
+    margin-left: -34px;
+    bottom: 12px;
+    z-index: 3
+}
 
-.marvel-device.iphone5s .home i {
+.marvel-device.iphone5s .home i, .ipad .home i {
     color: rgba(203, 91, 91, 0.5);
     padding: 19px;
     font-size: 30px;
@@ -185,7 +199,7 @@
     transition: all 100ms ease-in-out;
 }
 
-.marvel-device.iphone5s .home i:hover {
+.marvel-device.iphone5s .home i:hover, .ipad .home i:hover {
     color: rgba(203, 91, 91, 0.9);
 }
 
@@ -206,6 +220,13 @@
     bottom: 50%;
     margin-bottom: -34px;
     margin-left: 0px
+}
+
+.marvel-device.ipad.landscape .home {
+    left: 13px;
+    bottom: 50%;
+    margin-bottom: -34px;
+    margin-left: 0px;
 }
 
 .marvel-device.iphone5s.landscape .top-bar {
@@ -231,7 +252,6 @@
     background: #fcfcfc;
 }
 
-.marvel-device.iphone5s:before,
 .marvel-device.iphone5s.silver:before {
     background-image: url('../res/appsticker.png');
     background-size: auto 95px;
@@ -253,7 +273,55 @@
     background: #eaebec
 }
 
-.marvel-device.iphone5s.silver .home {
+.ipad .top-bar, .ipad .bottom-bar, .ipad .sleep, .ipad .volume {
+    display: none;
+}
+.marvel-device.iphone5s.silver .home, .marvel-device.ipad .home {
     -webkit-box-shadow: inset 0 0 0 4px #bcbcbc;
     box-shadow: inset 0 0 0 4px #bcbcbc
+}
+
+.marvel-device.ipad {
+    width: 576px;
+    height: 768px;
+    padding: 90px 25px;
+    background: #242324;
+    -webkit-border-radius: 44px;
+    border-radius: 44px
+}
+
+.marvel-device.ipad:before {
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    position: absolute;
+    content: '';
+    display: block;
+    top: 4px;
+    left: 4px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    background: #1e1e1e
+}
+.marvel-device.ipad.landscape {
+    height: 576px;
+    width: 768px;
+    padding: 25px 90px
+}
+
+.marvel-device.ipad.silver {
+    background: #bcbcbc
+}
+
+.marvel-device.ipad.silver:before {
+    background: #fcfcfc
+}
+
+.marvel-device.ipad.silver:before {
+    background-image: url('../res/appsticker.png');
+    background-size: auto 85px;
+    background-position: 100px 5px;
+    background-repeat: no-repeat;
+}
+.marvel-device.ipad.landscape:before {
+    background-image: none;
 }

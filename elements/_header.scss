@@ -1,7 +1,6 @@
 header {
     @extend %width-full;
     @extend .center;
-    text-transform: uppercase;
     padding: $header-padding;
     font-size: $header-font-size;
     background-color: $header-background-color;

@@ -67,7 +67,9 @@
             color: $tabs-bottom-tab-color;
         }
         &.active {
-            color: $tabs-bottom-tab-active-color;
+            .tab-name {
+                color: $tabs-bottom-tab-active-color;
+            }
             .tab-icon {
                 color: $tabs-bottom-tab-active-color;
             }

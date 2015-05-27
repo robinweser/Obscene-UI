@@ -3,6 +3,7 @@
     background-size: inherit;
     background-repeat: inherit;
     background-attachment: inherit;
+    background-position: inherit;
     overflow: hidden;
     &:before {
         content: '';
@@ -15,6 +16,7 @@
         background-size: inherit;
         background-repeat: inherit;
         background-attachment: inherit;
+        background-position: inherit;
         -webkit-filter: blur($translucent-background-blur) saturate($translucent-background-saturate);
     }
 }

@@ -1,0 +1,87 @@
+.ion {
+    margin-right: 3px;
+    color: inherit;
+}
+
+header {
+    text-transform: none;
+    border: none;
+    font-weight: 500;
+    button {
+        padding-top: 0px;
+        font-weight: 300;
+        line-height: 28px;
+        .ion {
+            font-size: 29px;
+            font-weight: 700;
+        }
+    }
+    .area-left {
+        margin-top: -4px;
+        button:first-child {
+            margin-left: 0;
+            padding-left: 0;
+        }
+        .ion {
+            float: left;
+        }
+    }
+    .area-right {
+        margin-top: -4px;
+        button:last-child {
+            margin-right: 0;
+            padding-right: 0;
+        }
+        .ion {
+            float: right;
+        }
+    }
+}
+
+.input-box {
+    label {
+        padding: 3px 0 8px;
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+    input {
+        border: none;
+    }
+}
+
+input[type="search"] {
+    font-weight: 200;
+    @extend input[type="search"].slide-icon;
+}
+
+.notification {
+    font-weight: 200;
+}
+
+.tabs-bottom {
+    .tab-icon {
+        margin-bottom: 5px;
+    }
+}
+
+.tabs-segmented {
+    .tab {
+        font-weight: 200;
+    }
+}
+
+ul {
+    li {
+        margin-left: 15px;
+    }
+    &.bordered {
+        border-top: none;
+    }
+    &.group {
+        .group-name {
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+}

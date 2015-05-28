@@ -13,7 +13,4 @@
     &.bordered {
         @extend .border-width-full;
     }
-    input[type="search"] {
-        padding-left: $input-search-padding-left;
-    }
 }

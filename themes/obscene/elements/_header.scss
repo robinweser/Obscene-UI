@@ -1,0 +1,18 @@
+header {
+    @extend %width-full;
+    @extend .center;
+    padding: $header-padding;
+    font-size: $header-font-size;
+    background-color: $header-background-color;
+    border-bottom: $border;
+    color: $primary-color;
+    vertical-align: 2px;
+    button,
+    input[type="submit"],
+    a {
+        @extend button.clear;
+        font-size: $header-font-size;
+        margin: 0 3px;
+        padding: 0;
+    }
+}

@@ -1,0 +1,26 @@
+.detail-list {
+    li {
+        padding: $detail-list-padding;
+        font-size: $detail-list-font-size;
+        line-height: $detail-list-line-height;
+    }
+    .list-image-left, .list-image-right {
+        display: inline-block;
+        vertical-align: top;
+        height: $detail-list-image-height;
+        float: left;
+        margin-left: 0;
+        margin-right: $detail-list-image-margin;
+    }
+    .list-image-right {
+        float: right;
+        margin-right: 0;
+        margin-left: $detail-list-image-margin;
+    }
+    .list-detail {
+        color: $detail-list-detail-color;
+        padding: $detail-list-detail-padding;
+        display: block;
+        @extend %ellipsis;
+    }
+}

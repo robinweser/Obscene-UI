@@ -1,11 +1,11 @@
 /*-------- COLOR SHEME ---------*/
 $primary-color: rgb(60, 60, 60);
-$secondary-color: rgb(128, 128, 128);
+$secondary-color: rgb(140, 140, 140);
 $tertiary-color: rgb(215, 215, 215);
 $foreground-color: rgb(30, 30, 30);
-$background-color: rgb(240, 240, 240);
-$bar-color: rgb(255, 255, 255);
-$border-color: rgba(142, 142, 147, 0.5);
+$background-color: rgb(250, 250, 250);
+$bar-color: rgb(245, 245, 245);
+$border-color: rgb(142, 142, 147);
 $highlight-color: #0076FF;
 $notification-color: #FF3824;
 $confirm-color: rgb(99, 177, 159);
@@ -23,7 +23,7 @@ $default-border-radius: 5px;
 /* Border */
 $border-style: solid;
 $border-width: 1px;
-$border: $border-width $border-style $border-color;
+$border: $border-width $border-style rgba($border-color, 0.4);
 $border-thick-width: 2px;
 
 /*-------- BUTTON ---------*/
@@ -63,7 +63,7 @@ $tabs-bottom-tab-active-color: $highlight-color;
 
 $tabs-bottom-tab-icon-size: 32px;
 $tabs-bottom-tab-icon-padding: 2px;
-$tabs-bottom-tab-icon-only-padding: 6px 0 2px;
+$tabs-bottom-tab-icon-only-padding: 6px 0 7px;
 
 $tabs-bottom-notification-max-width: 55px;
 $tabs-bottom-notification-align: right;
@@ -89,7 +89,7 @@ $tabs-striped-tab-active-border-color: $tabs-striped-tab-active-color;
 $tabs-striped-tab-active-border-bottom: $tabs-striped-tab-active-border-width solid $tabs-striped-tab-active-border-color;
 
 /* Segmented */
-$tabs-segmented-background-color: $bar-color;
+$tabs-segmented-background-color: transparent;
 $tabs-segmented-border-bottom: none;
 $tabs-segmented-padding: 6px;
 $tabs-segmented-tab-font-size: 13px;
@@ -99,9 +99,9 @@ $tabs-segmented-tab-color: $highlight-color;
 $tabs-segmented-tab-border-width: 1px;
 $tabs-segmented-tab-border-color: $tabs-segmented-tab-color;
 $tabs-segmented-tab-border-radius: $default-border-radius;
-$tabs-segmented-tab-background-color: $tabs-segmented-background-color;
+$tabs-segmented-tab-background-color: $background-color;
 $tabs-segmented-tab-background-width: 1px;
-$tabs-segmented-tab-active-color: $tabs-segmented-background-color;
+$tabs-segmented-tab-active-color: $tabs-segmented-tab-background-color;
 $tabs-segmented-tab-active-background-color: $tabs-segmented-tab-color;
 
 $tabs-segmented-notification-padding: 1px 6px;
@@ -126,7 +126,7 @@ $form-label-color: inherit;
 $form-input-color: inherit;
 
 /* Input box */
-$input-box-background-color: $border-color;
+$input-box-background-color: rgba($border-color, 0.4);
 $input-box-padding: 6px;
 $input-box-input-padding: 6px;
 $input-box-input-border-radius: $default-border-radius;
@@ -157,7 +157,7 @@ $textarea-border-width: 1px;
 $textarea-border: $input-border;
 
 /*------ LIST -------*/
-$list-background-color: $bar-color;
+$list-background-color: white;
 $list-item-padding: 13px 15px 13px 0;
 $list-item-selected-background-color: white;
 $list-ordered-padding-left: 28px;
@@ -197,7 +197,7 @@ $popup-message-border-radius: $default-border-radius;
 
 /*------ TOOLBAR ------*/
 $toolbar-background-color: $tabs-segmented-background-color;
-$toolbar-padding: 6px;
+$toolbar-padding: 3px;
 $toolbar-font-size: $default-font-size;
 $toolbar-input-padding: $toolbar-font-size - $toolbar-padding;
 

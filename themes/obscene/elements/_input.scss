@@ -1,0 +1,27 @@
+input {
+    -webkit-border-radius: 0;
+    border: none;
+    background-color: $input-background-color;
+    &[type="submit"] {
+        @extend button;
+    }
+    &[type="text"],
+    &[type="password"],
+    &[type="email"],
+    &[type="search"],
+    &[type="number"] {
+        padding: $input-padding;
+        font-size: $input-font-size;
+        border: $input-border;
+        @include border-radius($input-border-radius);
+    }
+    &.width-full {
+        @extend .border-width-full;
+        @include border-radius(0px);
+    }
+    &[type="radio"],
+    &[type="checkbox"] {
+        vertical-align: 1px;
+        margin-right: $input-checkbox-label-margin;
+    }
+}

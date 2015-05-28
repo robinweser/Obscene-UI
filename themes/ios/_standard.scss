@@ -1,6 +1,8 @@
 .ion {
-    margin-right: 3px;
+    margin: 0 3px;
     color: inherit;
+    font-size: 29px;
+    font-weight: 700;
 }
 
 header {
@@ -11,12 +13,9 @@ header {
         padding-top: 0px;
         font-weight: 300;
         line-height: 28px;
-        .ion {
-            font-size: 29px;
-            font-weight: 700;
-        }
     }
     .area-left {
+        @extend .hbox;
         margin-top: -4px;
         button:first-child {
             margin-left: 0;
@@ -27,6 +26,7 @@ header {
         }
     }
     .area-right {
+        @extend .hbox;
         margin-top: -4px;
         button:last-child {
             margin-right: 0;
@@ -67,13 +67,20 @@ input[type="search"] {
 
 .tabs-segmented {
     .tab {
-        font-weight: 200;
+        font-weight: 300;
     }
 }
 
 ul {
     li {
         margin-left: 15px;
+        padding-right: 30px;
+        .area-right {
+            color: $border-color;
+        }
+        .ion {
+            font-size: 20px;
+        }
     }
     &.bordered {
         border-top: none;
@@ -84,4 +91,13 @@ ul {
             line-height: 14px;
         }
     }
+}
+
+hr {
+    @include transform(scaleY(0.5));
+    margin: 0;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    background-color: rgba($border-color, 0.5);
 }

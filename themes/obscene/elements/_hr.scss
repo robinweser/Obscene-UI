@@ -1,0 +1,5 @@
+hr {
+    margin: $hr-margin 0;
+    border-width: 0;
+    border-top: $border-width $border-style $hr-color;
+}

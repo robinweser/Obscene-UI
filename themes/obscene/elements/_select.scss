@@ -1,0 +1,16 @@
+select {
+    padding: $select-padding;
+    font-size: $select-font-size;
+    min-width: $select-min-width;
+    border: $border;
+    @include border-radius($select-border-radius);
+    @include appearance(none);
+    &.width-full {
+        @extend input.width-full;
+    }
+    option,
+    optgroup {
+        @include appearance(none);
+        font-size: $select-option-font-size;
+    }
+}
